@@ -1,0 +1,89 @@
+#upImgBox {
+	height: 170px;
+	margin: 20px;
+}
+
+#upImgBox .upImgInput {
+	display: table-cell;
+	width: 150px;
+	height: 150px;
+	position: relative;
+	padding: 20px;
+	vertical-align: middle;
+}
+
+#upImgBox .upImg {
+	display: none;
+	width: 150px;
+	height: 150px;
+	vertical-align: middle;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+#upImgBox .upImg>img {
+	width:100%;
+	height: auto;
+}
+
+#upImgBox .imgCloseIcon {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	border-radius: 50%;
+	color: #fff;
+	background: #000;
+	text-align: center;
+	padding: 0 0 0 1px;
+	font-size: 18px;
+	cursor: pointer;
+	display: none;
+}
+
+#upImgBox .imgCloseIcon:hover {
+	background: red;
+}
+
+#upImgBox .upImgLabBox label {
+	display: block;
+	width: 150px;
+	height: 150px;
+	background: url(./upImgBg.png) no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 0;
+}
+
+
+#upImgBox .left {
+	float: left;
+}
+
+#upImgBox .right {
+	float: right;
+}
+
+#upImgBox .clear:after,
+#upImgBox .clear:before {
+	content: '';
+	display: block;
+	clear: both;
+	visibility: visible;
+}
+
+#upImgBox [type="file"]{
+	display: none;
+}
+
+#upImgBox .upImgLabBox>label{
+	cursor: pointer;
+}
+
+#upImgBox .imgTishi{
+	font-size: 14px;
+	color: #aaa;
+	margin-left:20px;
+}
