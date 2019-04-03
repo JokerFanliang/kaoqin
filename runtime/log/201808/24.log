@@ -1,0 +1,783 @@
+---------------------------------------------------------------
+[ 2018-08-24T15:37:39+08:00 ] 127.0.0.1 GET /admin
+[ info ] demo/admin [运行时间：0.091005s][吞吐率：10.99req/s] [内存消耗：1,497.91kb] [文件加载：47]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-24T15:37:41+08:00 ] 127.0.0.1 GET /admin/login/login.html
+[ info ] demo/admin/login/login.html [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,382.29kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://demo/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\demo\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-24T15:37:45+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] demo/admin/login/login.html [运行时间：0.140008s][吞吐率：7.14req/s] [内存消耗：2,292.88kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://demo/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://demo',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'username' => 'admin',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=demo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.089005s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'admin'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-08-24T15:37:45+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] demo/admin/index/index.html [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：1,393.52kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://demo/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-24T15:37:45+08:00 ] 127.0.0.1 GET /admin/admin/index.html
+[ info ] demo/admin/admin/index.html [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,404.29kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://demo/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/admin/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\demo\public/../application/admin\view\admin\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=demo;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-08-24T15:37:50+08:00 ] 127.0.0.1 GET /admin
+[ info ] demo/admin [运行时间：0.019002s][吞吐率：52.63req/s] [内存消耗：1,392.70kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-08-24T15:38:00+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.432082s][吞吐率：0.70req/s] [内存消耗：2,036.56kb] [文件加载：89]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=6a2gpke3gpmpbvvc256nb33v56',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:09:54+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：0.374021s][吞吐率：2.67req/s] [内存消耗：1,844.14kb] [文件加载：69]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [64]app\admin\controller\Elasticsearch::addOne(): Failed opening required 'vendor/autoload.php' (include_path='.;C:\php\pear')[D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php:30]
+---------------------------------------------------------------
+[ 2018-08-24T16:10:46+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.262072s][吞吐率：0.79req/s] [内存消耗：1,967.73kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:13:46+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：0.023001s][吞吐率：43.48req/s] [内存消耗：1,162.20kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]include(D:\phpStudy\PHPTutorial\WWW\demo\public/../application//vendor/autoload.php): failed to open stream: No such file or directory[D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php:17]
+---------------------------------------------------------------
+[ 2018-08-24T16:13:54+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：0.013000s][吞吐率：76.92req/s] [内存消耗：1,162.72kb] [文件加载：39]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ LOG ] INIT File
+[ error ] [2]include(D:\phpStudy\PHPTutorial\WWW\demo\public/../application//vendor/autoload.php): failed to open stream: No such file or directory[D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php:17]
+---------------------------------------------------------------
+[ 2018-08-24T16:13:59+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.233071s][吞吐率：0.81req/s] [内存消耗：1,967.73kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:14:51+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.235070s][吞吐率：0.81req/s] [内存消耗：1,962.18kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:15:44+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.233070s][吞吐率：0.81req/s] [内存消耗：1,964.33kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:15:48+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.252072s][吞吐率：0.80req/s] [内存消耗：1,964.33kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:17:20+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.252072s][吞吐率：0.80req/s] [内存消耗：1,962.21kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:21:19+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.245072s][吞吐率：0.80req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:33:19+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.244072s][吞吐率：0.80req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:33:22+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.235071s][吞吐率：0.81req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:35:32+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.244071s][吞吐率：0.80req/s] [内存消耗：1,962.14kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:36:01+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.236071s][吞吐率：0.81req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:51:06+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.228070s][吞吐率：0.81req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:51:10+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.239071s][吞吐率：0.81req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:53:09+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.311075s][吞吐率：0.76req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]
+---------------------------------------------------------------
+[ 2018-08-24T16:59:15+08:00 ] 127.0.0.1 GET /admin/Elasticsearch/addOne
+[ info ] demo/admin/Elasticsearch/addOne [运行时间：1.244071s][吞吐率：0.80req/s] [内存消耗：1,962.15kb] [文件加载：91]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\demo\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Elasticsearch',
+    2 => 'addOne',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'demo',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Elasticsearch/addOne' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Elasticsearch->addOne[ D:\phpStudy\PHPTutorial\WWW\demo\application\admin\controller\Elasticsearch.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]No alive nodes found in your cluster[D:\phpStudy\PHPTutorial\WWW\demo\vendor\elasticsearch\elasticsearch\src\Elasticsearch\ConnectionPool\StaticNoPingConnectionPool.php:51]

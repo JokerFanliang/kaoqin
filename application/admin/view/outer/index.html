@@ -1,0 +1,91 @@
+{include file="public/head"}
+<script type="text/javascript">
+
+    function del(id) {
+        layer.confirm('确定要删除吗？',  function(){
+            window.location.href="/admin/Outer/del?id="+id;
+        });
+    }
+</script>
+<div id="dcMain"><!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>Demo</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>
+      <a href="/admin/Outer/add"  class="actionBtn">添加</a>
+        外派人员
+    </h3>
+    <div class="filter">
+        <form action="/admin/Outer/index" method="get">
+            <select name="com">
+                <option value="">请选择分公司</option>
+                <option value="泾源">泾源县分公司</option>
+                <option value="彭阳">彭阳县分公司</option>
+                <option value="淳化">淳化县分公司</option>
+                <option value="正宁">正宁县分公司</option>
+                <option value="旬阳">旬阳县分公司</option>
+                <option value="岚皋">岚皋县分公司</option>
+                <option value="三原">三原县分公司</option>
+                <option value="靖边">靖边县分公司</option>
+                <option value="清涧">清涧县分公司</option>
+            </select>
+            <select name="local">
+                <option value="">请选择本地/外派/出差</option>
+                <option value="本地">本地</option>
+                <option value="外派">外派</option>
+                <option value="出差">出差</option>
+            </select>
+            <select name="rest">
+                <option value="2">请选择单休/双休</option>
+                <option value="0">单休</option>
+                <option value="1">双休</option>
+            </select>
+        <input name="realname" type="text" class="inpMain" placeholder="查找姓名" value="" size="20" />
+        <input name="submit" class="btnGray" type="submit" value="筛选" />
+        </form>
+        <span>
+<!--             <form action="/admin/Demo/import" method="post" enctype="multipart/form-data" id="import">
+                <input type="file" name="excel" class="excel">
+                <input type="hidden" name="token" value="">
+                <a class="btnGray submit" href="javascript::void(0)">导入</a>
+            </form> -->
+            <span class="btnGray">数量：{$count}</span>
+        </span>
+    </div>
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <th width="30" align="center">编号</th>
+                <th align="center">分公司名</th>
+                <th align="center">姓名</th>
+                <th align="center">岗位</th>
+                <th align="center">本地/外派</th>
+                <th align="center">外派时间</th>
+                <th align="center">单休/双休</th>
+                <th align="center">上班时间</th>
+                <th align="center">备注</th>
+                <th align="center">操作</th>
+            </tr>
+            {volist name='lists' id='list'}
+            <tr>
+                <td align="center">{$list->id}</td>
+                <td align="center">{$list->company}</td>
+                <td align="center">{$list->realname}</td>
+                <td align="center">{$list->job}</td>
+                <td align="center">{$list->local}</td>
+                <td align="center">{$list->out_date}</td>
+                <td align="center">{$list->rest==1 ? "双休" : "单休"}</td>
+                <td align="center">{$list->start==0 ? "8:00" : ($list->start==1 ? "8:30" : "9:00")}-{$list->end==0 ? "5:30" : "6:00"}</td>
+                <td align="center">{$list->remark}</td>
+                <td align="center">
+                  <a href="{:url('Outer/edit')}?id={$list->id}">编辑</a> |
+                  <a href="javascript::void(0)" onclick="javascript:return del('{$list->id}')">删除</a>
+                </td>
+            </tr>
+            {/volist}
+         </table>
+    </div>
+</div>
+<script>
+    $(".submit").click(function(){
+        $("#import").submit();
+    })
+</script>
+{include file="public/foot"}

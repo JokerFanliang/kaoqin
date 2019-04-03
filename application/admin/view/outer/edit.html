@@ -1,0 +1,94 @@
+{include file="public/head"}
+<div id="dcMain">
+    <!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>外派人员</strong> </div>   
+    <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>修改外派人员</h3>
+    <form action=""  method="post" id="form" enctype="multipart/form-data">
+        <input type="hidden" name="id" value="{$list->id}">
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <td align="right">分公司名称</td>
+                <td>
+                    <input type="text" required name="company" size="40" class="inpMain" value="{$list->company}" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">姓名</td>
+                <td>
+                    <input type="text" required name="realname" size="40" class="inpMain" value="{$list->realname}" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">岗位</td>
+                <td>
+                    <input type="text" required name="job" size="40" class="inpMain" value="{$list->job}" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">本地/外派</td>
+                <td>
+                    <select name="local" required>
+                        <option value="本地" <?php if($list->local=="本地")echo "selected";?>>本地</option>
+                        <option value="外派" <?php if($list->local=="外派")echo "selected";?>>外派</option>
+                        <option value="出差" <?php if($list->local=="出差")echo "selected";?>>出差</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">外派时间</td>
+                <td>
+                    <input type="text" name="out_date" size="40" class="inpMain" value="{$list->out_date}" />
+                </td>
+            </tr>
+            <tr>
+                <td align="right">单休/双休</td>
+                <td>
+                    <select name="rest" required>
+                        <option value="0" <?php if($list->rest==0)echo "selected";?>>单休</option>
+                        <option value="1" <?php if($list->rest==1)echo "selected";?>>双休</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">上班时间</td>
+                <td>
+                    <select name="start" required>
+                        <option value="0" <?php if($list->start==0)echo "selected";?>>8:00</option>
+                        <option value="1" <?php if($list->start==1)echo "selected";?>>8:30</option>
+                        <option value="2" <?php if($list->start==2)echo "selected";?>>9:00</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">下班时间</td>
+                <td>
+                    <select name="end" required>
+                        <option value="0" <?php if($list->end==0)echo "selected";?>>5:30</option>
+                        <option value="1" <?php if($list->end==1)echo "selected";?>>6:00</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">备注</td>
+                <td>
+                    <input type="text" name="remark" size="40" class="inpMain" value="{$list->remark}" />
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <div >
+                        <input type="hidden" value="1" name="types">
+                        <input type="submit" value="添加" class="btn sub">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>
+<div class="clear"></div>
+{include file="public/foot"}

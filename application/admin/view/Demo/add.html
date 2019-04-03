@@ -1,0 +1,83 @@
+{include file="public/head"}
+<div id="dcMain">
+    <!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>Demo</strong> </div>   
+    <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>添加Demo</h3>
+    <form action=""  method="post" id="form" enctype="multipart/form-data">
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <td align="right">标题</td>
+                <td>
+                    <input type="text" required name="title" size="40" class="inpMain" value="" />
+                </td>
+            </tr>
+            <tr>
+                <td width="100" align="right">图片</td>
+                <td>
+                    <div id="upImgBox" class="clear">
+                        <label class="left" for="jbImg">图片上传</label>
+                        <div class="left upImgBox">
+                            <div class="left imgTishi">(尺寸：400*235)</div>
+                            <div class="upImgBox">
+                                <div class="upImgInputBox clear">
+                                    <div class="upImgInput left">
+                                        <div class="imgCloseIcon">&times;</div>
+                                        <div class="upImgLabBox">
+                                            <label for="tupian-1" class="upImgLab"></label>
+                                            <input type="file" required name="img" class="inputText" id="tupian-1" accept="image/jpeg,image/gif,image/png" />
+                                        </div>
+                                        <div class="upImg">
+                                            <img src="" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">内容</td>
+                <td>
+                    <input type="hidden" name="content" class="content">
+                    <script id="editor" type="text/plain" style="width:1024px;height:300px;"></script>
+                </td>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td>
+                    <div >
+                        <input type="hidden" value="1" name="types">
+                        <input type="submit" value="添加" class="btn sub">
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </form>
+    </div>
+</div>
+<div class="clear"></div>
+<script>
+    var upImgSrc=$('#upImgBox').find(".upImg>img");
+    $.each(upImgSrc,function(i,e){
+        if($(e).attr('src')!=""){
+            // alert($(this).parent().prve().attr('class'));
+            $(this).parent().show();
+            $(this).parent().prev().hide();
+            $(this).parent().prev().prev().show();
+                
+        }
+    })
+    //实例化编辑器
+    var ue = UE.getEditor('editor');
+    $(".sub").click(function(){
+        var arr = [];
+        arr.push(UE.getEditor('editor').getContent());
+        var text=arr.join("\n");                
+        $(".content").val(text);
+        $("#form").submit();
+    })
+</script>
+{include file="public/foot"}

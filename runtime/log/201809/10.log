@@ -1,0 +1,1839 @@
+---------------------------------------------------------------
+[ 2018-09-10T16:23:54+08:00 ] 192.168.1.189 GET /admin/Daily/index
+[ info ] 192.168.1.170/admin/Daily/index [运行时间：0.064003s][吞吐率：15.62req/s] [内存消耗：2,541.31kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/import',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:01+08:00 ] 192.168.1.189 GET /admin/Daily/sums
+[ info ] 192.168.1.170/admin/Daily/sums [运行时间：3.236383s][吞吐率：0.31req/s] [内存消耗：2,481.33kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'sums',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/sums' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->sums[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ribao` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` >= '17:30' AND `write_time` <= '23:00' ) GROUP BY `number` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '01082822141264237' [ RunTime:0.100006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '010928361726617755' [ RunTime:0.034002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '0140161135811599' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '014819010938126345' [ RunTime:0.022002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '0218640418695311' [ RunTime:0.026001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '024518411035455397' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '03201623368314' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '04061761271503' [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '042566085426244860' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '043767190339060940' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '046710240824235628' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '051419386829255971' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '053053343220159540' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '060649501924138624' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '06211065131042801' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '065463034927511206' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '065815320036682414' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '07134135461144158' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='6'  WHERE  `number` = '074444166235442918' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '0905560063995690' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '091702454726645038' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '101564416220456961' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '120048206220050933' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '1208046866672896' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '140016074231245188' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '144720393121395063' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15208168069453358' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '1521162155250869' [ RunTime:0.039003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '15212671222182710' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15217043130159311' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15223113500818305' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15226313307581278' [ RunTime:0.032002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '15226334519546140' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15228072847076615' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15228081327425724' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '152289722677782' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15231495449058738' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15231498741127786' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15231780559711526' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '15235823627483803' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15240146903241460' [ RunTime:0.027002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15240999091436671' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15245323812918493' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15253920656202493' [ RunTime:0.031002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1525849702667510' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '1525925830986196' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '15260000141361649' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15262589364765517' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15263489809748754' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15263493676961583' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15265180392627277' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '1526603976447244' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '15268678154483718' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '1527484468478101' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1527814374419358' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15280743024866892' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15288541740992148' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15300824245032149' [ RunTime:0.004000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15301514817148928' [ RunTime:0.037201s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15302556642038759' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15306057464106503' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '15310967077943649' [ RunTime:0.019002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15312743973281162' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15317035221275331' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '15319661132344654' [ RunTime:0.023002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15323135132622867' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='5'  WHERE  `number` = '1532569039601230' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15337148293564450' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '1552531760788371' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '164112652029715429' [ RunTime:0.033001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '1654213315657725' [ RunTime:0.018002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '182154360638257144' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '20530917451220641' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210348080237708973' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210356373230117580' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='4'  WHERE  `number` = '4713153326023290' [ RunTime:0.022002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='3'  WHERE  `number` = '6724401822008398' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  `write_time` > '23:00' OR `write_time` <= '10:00' GROUP BY `number` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '010928361726617755' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='3'  WHERE  `number` = '053052311820399066' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '065463034927511206' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '1208046866672896' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '1339260944790138' [ RunTime:0.023001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='2'  WHERE  `number` = '143102092229094475' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '144720393121395063' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='2'  WHERE  `number` = '15222863162749107' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15228081327425724' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '152289722677782' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15234944480026125' [ RunTime:0.028001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15235823627483803' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15262589364765517' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.024002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '1526603976447244' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15306057464106503' [ RunTime:0.013000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15312743973281162' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15319661132344654' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15337148293564450' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='2'  WHERE  `number` = '174311355829450519' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='2'  WHERE  `number` = '182154360638257144' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '4713153326023290' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` > '10:00' AND `write_time` < '17:30' ) GROUP BY `number` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '010928361726617755' [ RunTime:0.047003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '0140161135811599' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '014819010938126345' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '03201623368314' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '04061761271503' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '042566085426244860' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '043767190339060940' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '046710240824235628' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '051419386829255971' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '053053343220159540' [ RunTime:0.018002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '06211065131042801' [ RunTime:0.015000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065815320036682414' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '065816545638972371' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '07134135461144158' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '071416383736640268' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '0905560063995690' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '096645572424247712' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '120048206220050933' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1208046866672896' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '143102092229094475' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '1521162155250869' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15212671222182710' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15217043130159311' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '15222863162749107' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15226313307581278' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15226334519546140' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '15228072847076615' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15231495449058738' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15231498741127786' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '15234944480026125' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15240146903241460' [ RunTime:0.015000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '15245323812918493' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='5'  WHERE  `number` = '15253070811833920' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '1525849702667510' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15260000141361649' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15262589364765517' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.025002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15263493676961583' [ RunTime:0.025001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15265180392627277' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '1526603976447244' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15268678154483718' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1527484468478101' [ RunTime:0.023001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '1527814374419358' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15300824245032149' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '15306057464106503' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15312743973281162' [ RunTime:0.023001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1532652533215682' [ RunTime:0.019002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='4'  WHERE  `number` = '1552531760788371' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '164112652029715429' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '1654213315657725' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='3'  WHERE  `number` = '174311355829450519' [ RunTime:0.024002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '182154360638257144' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '6724401822008398' [ RunTime:0.018001s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:04+08:00 ] 192.168.1.189 GET /admin/Daily/index
+[ info ] 192.168.1.170/admin/Daily/index [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：2,541.11kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/sums',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:07+08:00 ] 192.168.1.189 GET /admin/Daily/export
+[ info ] 192.168.1.170/admin/Daily/export [运行时间：0.110007s][吞吐率：9.09req/s] [内存消耗：5,387.34kb] [文件加载：116]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'export',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/export' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->export[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:35+08:00 ] 192.168.1.189 GET /admin/Daily/remove
+[ info ] 192.168.1.170/admin/Daily/remove [运行时间：0.249014s][吞吐率：4.02req/s] [内存消耗：2,345.16kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'remove',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/remove' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->remove[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ribao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] DELETE FROM `ribao`    WHERE  `id` > 0 [ RunTime:0.143009s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.006000s ]
+[ sql ] [ SQL ] DELETE FROM `sum`    WHERE  `id` > 0 [ RunTime:0.057003s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:36+08:00 ] 192.168.1.189 GET /admin/daily/index.html
+[ info ] 192.168.1.170/admin/daily/index.html [运行时间：0.037002s][吞吐率：27.03req/s] [内存消耗：2,347.33kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/daily/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:43+08:00 ] 192.168.1.189 POST /admin/Daily/import
+[ info ] 192.168.1.170/admin/Daily/import [运行时间：0.358021s][吞吐率：2.79req/s] [内存消耗：6,108.03kb] [文件加载：121]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://192.168.1.170/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary1CbltHpZ4ganGn35',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://192.168.1.170',
+  'cache-control' => 'max-age=0',
+  'content-length' => '340771',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/import' => '',
+  'token' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->import[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ribao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1527484468478101' , '王静' , '正宁分公司' , '09月02号 22:58' , '22:58' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.055003s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15208168069453358' , '马文龙' , '宁陕分公司' , '09月02号 22:31' , '22:31' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('4713153326023290' , '晏普龙' , '旬阳分公司' , '09月02号 22:18' , '22:18' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('0218640418695311' , '唐伟' , '电商运营部' , '09月02号 21:34' , '21:34' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15265180392627277' , '田浩' , '泾源分公司' , '09月02号 20:04' , '20:04' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('04061761271503' , '田亮亮' , '旬阳分公司' , '09月02号 17:59' , '17:59' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('042566085426244860' , '李斌强' , '三原分公司' , '09月02号 17:50' , '17:50' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('065815320036682414' , '郝维超' , '靖边分公司' , '09月02号 17:10' , '17:10' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15226313307581278' , '何依' , '三原分公司' , '09月02号 17:07' , '17:07' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15310967077943649' , '王莹' , '运营中心' , '09月02号 16:49' , '16:49' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15300824245032149' , '禹龙龙' , '泾源分公司' , '09月02号 16:35' , '16:35' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15306057464106503' , '于志龙' , '泾源分公司' , '09月02号 15:25' , '15:25' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1552531760788371' , '张芳' , '彭阳分公司' , '09月02号 15:13' , '15:13' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('046710240824235628' , '张新曼' , '文案策划' , '09月02号 14:56' , '14:56' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('182154360638257144' , '韩永文' , '清涧分公司' , '09月02号 08:26' , '08:26' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15240999091436671' , '蒲全苗' , '淳化分公司' , '09月02号 00:27' , '00:27' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('03201623368314' , '罗丹' , '大区一,电商事业部' , '09月01号 22:55' , '22:55' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('051419386829255971' , '王斯尧' , '三原分公司,大区二' , '09月01号 22:02' , '22:02' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('101564416220456961' , '乔金瑞' , '彭阳分公司' , '09月01号 20:55' , '20:55' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15212671222182710' , '何霖' , '旬阳分公司' , '09月01号 20:49' , '20:49' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15337148293564450' , '朱银霞' , '彭阳分公司' , '09月01号 20:05' , '20:05' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15231495449058738' , '周雷' , '淳化分公司' , '09月01号 19:02' , '19:02' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('144720393121395063' , '吴兰芳' , '彭阳分公司' , '09月01号 18:54' , '18:54' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('120048206220050933' , '么思琪' , '彭阳分公司' , '09月01号 18:38' , '18:38' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15217043130159311' , '梁雪尧' , '正宁分公司' , '09月01号 18:35' , '18:35' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('0905560063995690' , '秋燕' , '旬阳分公司' , '09月01号 18:33' , '18:33' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15268678154483718' , '杨旭旭' , '正宁分公司' , '09月01号 18:05' , '18:05' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15240146903241460' , '贺静茹' , '淳化分公司' , '09月01号 17:49' , '17:49' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15222863162749107' , '王佳奕' , '三原分公司' , '09月01号 17:18' , '17:18' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15263489809748754' , '闫斌科' , '正宁分公司' , '09月01号 16:45' , '16:45' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1527814374419358' , '阮星星' , '淳化分公司' , '09月01号 16:45' , '16:45' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15245323812918493' , '赵坤' , '三原分公司' , '09月01号 15:29' , '15:29' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1526603976447244' , '王宇' , '三原分公司' , '09月01号 10:32' , '10:32' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15223113500818305' , '路琳' , '正宁分公司' , '09月01号 10:02' , '10:02' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15262589364765517' , '赵真' , '淳化分公司' , '09月01号 08:42' , '08:42' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('20530917451220641' , '陈浩' , '岚皋分公司' , '08月31号 23:41' , '23:41' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('140016074231245188' , '程雪姣' , '电商运营部' , '08月31号 22:19' , '22:19' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15226334519546140' , '曾颖' , '岚皋分公司' , '08月31号 21:57' , '21:57' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.003000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15231780559711526' , '惠岗岗' , '清涧分公司' , '08月31号 21:33' , '21:33' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15231498741127786' , '陈佳' , '岚皋分公司' , '08月31号 20:58' , '20:58' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('053053343220159540' , '任国靖' , '岚皋分公司' , '08月31号 20:55' , '20:55' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15253920656202493' , '陈天婷' , '岚皋分公司' , '08月31号 20:36' , '20:36' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('024518411035455397' , '赵丽萍' , '美工设计' , '08月31号 20:25' , '20:25' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15265180392627277' , '田浩' , '泾源分公司' , '08月31号 20:16' , '20:16' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1521162155250869' , '马智霞' , '泾源分公司' , '08月31号 19:56' , '19:56' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15235823627483803' , '王南' , '文案策划' , '08月31号 19:27' , '19:27' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('074444166235442918' , '赵丽华' , '文案策划' , '08月31号 19:25' , '19:25' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('060649501924138624' , '张姣姣' , '电商运营部' , '08月31号 18:40' , '18:40' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('06211065131042801' , '肖均' , '淳化分公司' , '08月31号 18:29' , '18:29' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('210348080237708973' , '闫文利' , '宁陕分公司' , '08月31号 18:17' , '18:17' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('0140161135811599' , '张敏' , '美工设计' , '08月31号 18:15' , '18:15' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1532569039601230' , '刘美卓' , '美工设计' , '08月31号 18:14' , '18:14' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('210356373230117580' , '田鹏程' , '美工设计' , '08月31号 18:14' , '18:14' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('091702454726645038' , '李阳阳' , '文案策划' , '08月31号 18:12' , '18:12' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('014819010938126345' , '雷秋丽' , '旬阳分公司' , '08月31号 18:08' , '18:08' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15302556642038759' , '刘富祥' , '岚皋分公司' , '08月31号 18:04' , '18:04' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1654213315657725' , '丁霞' , '泾源分公司' , '08月31号 18:03' , '18:03' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1525925830986196' , '朱国辉' , '岚皋分公司' , '08月31号 18:03' , '18:03' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15288541740992148' , '蒙萌' , '电商运营部' , '08月31号 18:02' , '18:02' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15301514817148928' , '于亚强' , '泾源分公司' , '08月31号 18:00' , '18:00' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('010928361726617755' , '杨金凤' , '泾源分公司' , '08月31号 17:53' , '17:53' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1525849702667510' , '张珂' , '三原分公司' , '08月31号 16:59' , '16:59' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('043767190339060940' , '马芳芳' , '靖边分公司' , '08月31号 16:00' , '16:00' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('065816545638972371' , '魏小艳' , '靖边分公司' , '08月31号 15:27' , '15:27' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15253070811833920' , '李英浩' , '三原分公司' , '08月31号 15:15' , '15:15' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15234944480026125' , '闫城' , '靖边分公司' , '08月31号 09:20' , '09:20' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('174311355829450519' , '王红亮' , '靖边分公司' , '08月31号 09:10' , '09:10' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15260000141361649' , '罗宏涛' , '培训部' , '08月03号 17:25' , '17:25' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15226313307581278' , '何依' , '三原分公司' , '08月02号 22:13' , '22:13' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('120048206220050933' , '么思琪' , '彭阳分公司' , '08月02号 21:27' , '21:27' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15245323812918493' , '赵坤' , '三原分公司' , '08月02号 21:15' , '21:15' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15228072847076615' , '冯雨萌' , NULL , '08月02号 20:30' , '20:30' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('152289722677782' , '张亚月' , '彭阳分公司' , '08月02号 18:45' , '18:45' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('4713153326023290' , '晏普龙' , '旬阳分公司' , '08月02号 17:27' , '17:27' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('04061761271503' , '田亮亮' , '旬阳分公司' , '08月02号 16:55' , '16:55' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('065463034927511206' , '汪本全' , '旬阳分公司' , '08月02号 16:44' , '16:44' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('07134135461144158' , '贺存' , '清涧分公司' , '08月02号 15:26' , '15:26' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1527484468478101' , '王静' , '正宁分公司' , '08月02号 14:31' , '14:31' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15306057464106503' , '于志龙' , '泾源分公司' , '08月02号 13:56' , '13:56' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15217043130159311' , '梁雪尧' , '正宁分公司' , '08月02号 10:22' , '10:22' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('065816545638972371' , '魏小艳' , '靖边分公司' , '08月02号 09:42' , '09:42' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15301514817148928' , '于亚强' , '泾源分公司' , '08月02号 09:07' , '09:07' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15263489809748754' , '闫斌科' , '正宁分公司' , '08月02号 08:39' , '08:39' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15268678154483718' , '杨旭旭' , '正宁分公司' , '08月02号 08:31' , '08:31' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15231495449058738' , '周雷' , '淳化分公司' , '08月02号 08:24' , '08:24' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1527814374419358' , '阮星星' , '淳化分公司' , '08月02号 00:20' , '00:20' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15228081327425724' , '李楠' , '宁陕分公司' , '08月01号 21:39' , '21:39' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('101564416220456961' , '乔金瑞' , '彭阳分公司' , '08月01号 21:16' , '21:16' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15312743973281162' , '马滩' , '旬阳分公司' , '08月01号 19:05' , '19:05' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('03201623368314' , '罗丹' , '大区一,电商事业部' , '08月01号 18:48' , '18:48' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1525849702667510' , '张珂' , '三原分公司' , '08月01号 18:41' , '18:41' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('0905560063995690' , '秋燕' , '旬阳分公司' , '08月01号 18:22' , '18:22' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15223113500818305' , '路琳' , '正宁分公司' , '08月01号 18:15' , '18:15' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15310967077943649' , '王莹' , '运营中心' , '08月01号 18:08' , '18:08' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15319661132344654' , '王博' , '电商运营部' , '08月01号 18:05' , '18:05' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('15212671222182710' , '何霖' , '旬阳分公司' , '08月01号 18:01' , '18:01' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `ribao` (`number` , `realname` , `depart` , `write_date` , `write_time` , `create_time` , `update_time`) VALUES ('1521162155250869' , '马智霞' , '泾源分公司' , '08月01号 17:36' , '17:36' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT id,number,realname,depart,count(*) FROM `ribao` GROUP BY `number` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('010928361726617755' , '杨金凤' , '泾源分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('0140161135811599' , '张敏' , '美工设计' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('014819010938126345' , '雷秋丽' , '旬阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('0218640418695311' , '唐伟' , '电商运营部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('024518411035455397' , '赵丽萍' , '美工设计' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('03201623368314' , '罗丹' , '大区一,电商事业部' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('04061761271503' , '田亮亮' , '旬阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('042566085426244860' , '李斌强' , '三原分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('043767190339060940' , '马芳芳' , '靖边分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('046710240824235628' , '张新曼' , '文案策划' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('051419386829255971' , '王斯尧' , '三原分公司,大区二' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('053053343220159540' , '任国靖' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('060649501924138624' , '张姣姣' , '电商运营部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('06211065131042801' , '肖均' , '淳化分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('065463034927511206' , '汪本全' , '旬阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('065815320036682414' , '郝维超' , '靖边分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('065816545638972371' , '魏小艳' , '靖边分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('07134135461144158' , '贺存' , '清涧分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('074444166235442918' , '赵丽华' , '文案策划' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('0905560063995690' , '秋燕' , '旬阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('091702454726645038' , '李阳阳' , '文案策划' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('101564416220456961' , '乔金瑞' , '彭阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('120048206220050933' , '么思琪' , '彭阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('140016074231245188' , '程雪姣' , '电商运营部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('144720393121395063' , '吴兰芳' , '彭阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15208168069453358' , '马文龙' , '宁陕分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1521162155250869' , '马智霞' , '泾源分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15212671222182710' , '何霖' , '旬阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15217043130159311' , '梁雪尧' , '正宁分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15222863162749107' , '王佳奕' , '三原分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15223113500818305' , '路琳' , '正宁分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15226313307581278' , '何依' , '三原分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15226334519546140' , '曾颖' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15228072847076615' , '冯雨萌' , NULL , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15228081327425724' , '李楠' , '宁陕分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('152289722677782' , '张亚月' , '彭阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15231495449058738' , '周雷' , '淳化分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15231498741127786' , '陈佳' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15231780559711526' , '惠岗岗' , '清涧分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15234944480026125' , '闫城' , '靖边分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15235823627483803' , '王南' , '文案策划' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15240146903241460' , '贺静茹' , '淳化分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15240999091436671' , '蒲全苗' , '淳化分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15245323812918493' , '赵坤' , '三原分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15253070811833920' , '李英浩' , '三原分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15253920656202493' , '陈天婷' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1525849702667510' , '张珂' , '三原分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1525925830986196' , '朱国辉' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15260000141361649' , '罗宏涛' , '培训部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15262589364765517' , '赵真' , '淳化分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15263489809748754' , '闫斌科' , '正宁分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15265180392627277' , '田浩' , '泾源分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1526603976447244' , '王宇' , '三原分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15268678154483718' , '杨旭旭' , '正宁分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1527484468478101' , '王静' , '正宁分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1527814374419358' , '阮星星' , '淳化分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15288541740992148' , '蒙萌' , '电商运营部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15300824245032149' , '禹龙龙' , '泾源分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15301514817148928' , '于亚强' , '泾源分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15302556642038759' , '刘富祥' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15306057464106503' , '于志龙' , '泾源分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15310967077943649' , '王莹' , '运营中心' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15312743973281162' , '马滩' , '旬阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15319661132344654' , '王博' , '电商运营部' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1532569039601230' , '刘美卓' , '美工设计' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('15337148293564450' , '朱银霞' , '彭阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1552531760788371' , '张芳' , '彭阳分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('1654213315657725' , '丁霞' , '泾源分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('174311355829450519' , '王红亮' , '靖边分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('182154360638257144' , '韩永文' , '清涧分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('20530917451220641' , '陈浩' , '岚皋分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('210348080237708973' , '闫文利' , '宁陕分公司' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('210356373230117580' , '田鹏程' , '美工设计' , '1' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `sum` (`number` , `realname` , `depart` , `all` , `one` , `two` , `three` , `create_time` , `update_time`) VALUES ('4713153326023290' , '晏普龙' , '旬阳分公司' , '2' , '' , '' , '' , '2018-09-10 16:24:42' , '2018-09-10 16:24:42') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:46+08:00 ] 192.168.1.189 GET /admin/Daily/index
+[ info ] 192.168.1.170/admin/Daily/index [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,509.42kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/import',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:52+08:00 ] 192.168.1.189 GET /admin/Daily/sums
+[ info ] 192.168.1.170/admin/Daily/sums [运行时间：4.122835s][吞吐率：0.24req/s] [内存消耗：2,379.22kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'sums',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/sums' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->sums[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ribao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` >= '17:30' AND `write_time` <= '23:00' ) GROUP BY `number` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '010928361726617755' [ RunTime:0.124007s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '0140161135811599' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '014819010938126345' [ RunTime:0.057003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '0218640418695311' [ RunTime:0.024001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '024518411035455397' [ RunTime:0.020002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '03201623368314' [ RunTime:0.058003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '04061761271503' [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '042566085426244860' [ RunTime:0.067004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '051419386829255971' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '053053343220159540' [ RunTime:0.073004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '060649501924138624' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '06211065131042801' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '074444166235442918' [ RunTime:0.025001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '0905560063995690' [ RunTime:0.024002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '091702454726645038' [ RunTime:0.027001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '101564416220456961' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '120048206220050933' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '140016074231245188' [ RunTime:0.168010s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '144720393121395063' [ RunTime:0.063004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15208168069453358' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '1521162155250869' [ RunTime:0.040002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15212671222182710' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15217043130159311' [ RunTime:0.041003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15223113500818305' [ RunTime:0.058003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15226313307581278' [ RunTime:0.058003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15226334519546140' [ RunTime:0.097005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15228072847076615' [ RunTime:0.107006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15228081327425724' [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '152289722677782' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231495449058738' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231498741127786' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231780559711526' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15235823627483803' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15240146903241460' [ RunTime:0.033001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15245323812918493' [ RunTime:0.044003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15253920656202493' [ RunTime:0.074004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1525849702667510' [ RunTime:0.031002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1525925830986196' [ RunTime:0.032002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15265180392627277' [ RunTime:0.043002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15268678154483718' [ RunTime:0.057004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1527484468478101' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15288541740992148' [ RunTime:0.055003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.114007s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15302556642038759' [ RunTime:0.191011s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15310967077943649' [ RunTime:0.108006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15312743973281162' [ RunTime:0.107006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15319661132344654' [ RunTime:0.092005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1532569039601230' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15337148293564450' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1654213315657725' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210348080237708973' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210356373230117580' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '4713153326023290' [ RunTime:0.021001s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  `write_time` > '23:00' OR `write_time` <= '10:00' GROUP BY `number` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '065816545638972371' [ RunTime:0.018001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15231495449058738' [ RunTime:0.026001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15234944480026125' [ RunTime:0.047003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15240999091436671' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15262589364765517' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15268678154483718' [ RunTime:0.097006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '1527814374419358' [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.040002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '174311355829450519' [ RunTime:0.025001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '182154360638257144' [ RunTime:0.070004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '20530917451220641' [ RunTime:0.012001s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` > '10:00' AND `write_time` < '17:30' ) GROUP BY `number` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '04061761271503' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '043767190339060940' [ RunTime:0.040003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '046710240824235628' [ RunTime:0.049002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065463034927511206' [ RunTime:0.070004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065815320036682414' [ RunTime:0.081005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065816545638972371' [ RunTime:0.055003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '07134135461144158' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15217043130159311' [ RunTime:0.038003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15222863162749107' [ RunTime:0.021001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15223113500818305' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15226313307581278' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15245323812918493' [ RunTime:0.100006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15253070811833920' [ RunTime:0.023001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1525849702667510' [ RunTime:0.069603s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15260000141361649' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1526603976447244' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1527484468478101' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1527814374419358' [ RunTime:0.048003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15300824245032149' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15306057464106503' [ RunTime:0.019001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15310967077943649' [ RunTime:0.021001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1552531760788371' [ RunTime:0.100006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '4713153326023290' [ RunTime:0.024001s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:24:57+08:00 ] 192.168.1.189 GET /admin/Daily/sums
+[ info ] 192.168.1.170/admin/Daily/sums [运行时间：3.982228s][吞吐率：0.25req/s] [内存消耗：2,379.22kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'sums',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/sums' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->sums[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `ribao` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` >= '17:30' AND `write_time` <= '23:00' ) GROUP BY `number` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '010928361726617755' [ RunTime:0.021001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '0140161135811599' [ RunTime:0.034002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '014819010938126345' [ RunTime:0.054003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '0218640418695311' [ RunTime:0.026002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '024518411035455397' [ RunTime:0.028001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '03201623368314' [ RunTime:0.086004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '04061761271503' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '042566085426244860' [ RunTime:0.025002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '051419386829255971' [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '053053343220159540' [ RunTime:0.028002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '060649501924138624' [ RunTime:0.135007s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '06211065131042801' [ RunTime:0.067004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '074444166235442918' [ RunTime:0.078005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '0905560063995690' [ RunTime:0.044002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '091702454726645038' [ RunTime:0.041003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '101564416220456961' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '120048206220050933' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '140016074231245188' [ RunTime:0.075005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '144720393121395063' [ RunTime:0.083005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15208168069453358' [ RunTime:0.038002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '1521162155250869' [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15212671222182710' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15217043130159311' [ RunTime:0.067004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15223113500818305' [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15226313307581278' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15226334519546140' [ RunTime:0.041003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15228072847076615' [ RunTime:0.050002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15228081327425724' [ RunTime:0.074005s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '152289722677782' [ RunTime:0.058003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231495449058738' [ RunTime:0.100006s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231498741127786' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15231780559711526' [ RunTime:0.042003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15235823627483803' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15240146903241460' [ RunTime:0.059003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15245323812918493' [ RunTime:0.058004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15253920656202493' [ RunTime:0.083004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1525849702667510' [ RunTime:0.015001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1525925830986196' [ RunTime:0.051003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='2'  WHERE  `number` = '15265180392627277' [ RunTime:0.062004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15268678154483718' [ RunTime:0.055003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1527484468478101' [ RunTime:0.024001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15288541740992148' [ RunTime:0.026002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.026001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15302556642038759' [ RunTime:0.022002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15310967077943649' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15312743973281162' [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15319661132344654' [ RunTime:0.041002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1532569039601230' [ RunTime:0.041003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '15337148293564450' [ RunTime:0.042002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '1654213315657725' [ RunTime:0.057003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210348080237708973' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '210356373230117580' [ RunTime:0.066004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `one`='1'  WHERE  `number` = '4713153326023290' [ RunTime:0.058004s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  `write_time` > '23:00' OR `write_time` <= '10:00' GROUP BY `number` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '065816545638972371' [ RunTime:0.044002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15231495449058738' [ RunTime:0.070004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15234944480026125' [ RunTime:0.040003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15240999091436671' [ RunTime:0.014000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15262589364765517' [ RunTime:0.019002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.020001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15268678154483718' [ RunTime:0.036002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '1527814374419358' [ RunTime:0.025001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '15301514817148928' [ RunTime:0.058004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '174311355829450519' [ RunTime:0.047002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '182154360638257144' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `two`='1'  WHERE  `number` = '20530917451220641' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] SELECT id,number,count(*) FROM `ribao` WHERE  ( `write_time` > '10:00' AND `write_time` < '17:30' ) GROUP BY `number` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '04061761271503' [ RunTime:0.014001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '043767190339060940' [ RunTime:0.053003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '046710240824235628' [ RunTime:0.063004s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065463034927511206' [ RunTime:0.050003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065815320036682414' [ RunTime:0.031001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '065816545638972371' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '07134135461144158' [ RunTime:0.027001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15217043130159311' [ RunTime:0.013001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15222863162749107' [ RunTime:0.022001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15223113500818305' [ RunTime:0.036002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15226313307581278' [ RunTime:0.024002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15245323812918493' [ RunTime:0.063003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15253070811833920' [ RunTime:0.051003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1525849702667510' [ RunTime:0.016001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15260000141361649' [ RunTime:0.028002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15263489809748754' [ RunTime:0.021001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1526603976447244' [ RunTime:0.025001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1527484468478101' [ RunTime:0.054003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1527814374419358' [ RunTime:0.033002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15300824245032149' [ RunTime:0.017001s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='2'  WHERE  `number` = '15306057464106503' [ RunTime:0.035002s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '15310967077943649' [ RunTime:0.115007s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '1552531760788371' [ RunTime:0.049003s ]
+[ sql ] [ SQL ] UPDATE `sum`  SET `three`='1'  WHERE  `number` = '4713153326023290' [ RunTime:0.026001s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:25:00+08:00 ] 192.168.1.189 GET /admin/Daily/index
+[ info ] 192.168.1.170/admin/Daily/index [运行时间：0.051003s][吞吐率：19.61req/s] [内存消耗：2,509.42kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/sums',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T16:25:02+08:00 ] 192.168.1.189 GET /admin/Daily/export
+[ info ] 192.168.1.170/admin/Daily/export [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：5,357.17kb] [文件加载：116]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'export',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=seip1ci9sehr8pge7b2e56hep1',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch',
+  'referer' => 'http://192.168.1.170/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => '192.168.1.170',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/export' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->export[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:21:12+08:00 ] 127.0.0.1 GET /admin
+[ info ] wangying/admin [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：1,363.11kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T17:21:15+08:00 ] 127.0.0.1 GET /admin/login/login.html
+[ info ] wangying/admin/login/login.html [运行时间：0.031001s][吞吐率：32.26req/s] [内存消耗：1,366.63kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T17:21:18+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] wangying/admin/login/login.html [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,256.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://wangying',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'username' => 'admin',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'admin'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.005000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:21:18+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] wangying/admin/index/index.html [运行时间：0.015001s][吞吐率：66.66req/s] [内存消耗：1,368.53kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-10T17:21:18+08:00 ] 127.0.0.1 GET /admin/admin/index.html
+[ info ] wangying/admin/admin/index.html [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,343.77kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/admin/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\admin\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:21:21+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.117007s][吞吐率：8.55req/s] [内存消耗：2,509.46kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/admin/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.055003s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:21:26+08:00 ] 127.0.0.1 GET /admin/outer/index
+[ info ] wangying/admin/outer/index [运行时间：0.158009s][吞吐率：6.33req/s] [内存消耗：2,292.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'outer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/outer/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Outer->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Outer.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\outer\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `outer` [ RunTime:0.084005s ]
+[ sql ] [ SQL ] SELECT * FROM `outer` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:21:27+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.090005s][吞吐率：11.11req/s] [内存消耗：2,836.76kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/outer/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.032002s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:26:25+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,509.46kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:26:27+08:00 ] 127.0.0.1 GET /admin/outer/index
+[ info ] wangying/admin/outer/index [运行时间：0.057003s][吞吐率：17.54req/s] [内存消耗：2,292.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'outer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/outer/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Outer->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Outer.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\outer\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `outer` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `outer` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:26:30+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：2,836.76kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/outer/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.004001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:26:32+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.054003s][吞吐率：18.52req/s] [内存消耗：2,509.46kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T17:27:02+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.066602s][吞吐率：15.01req/s] [内存消耗：2,836.76kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-10T18:23:28+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.034001s][吞吐率：29.41req/s] [内存消耗：2,836.76kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T18:26:19+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.053003s][吞吐率：18.87req/s] [内存消耗：2,509.46kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T18:26:25+08:00 ] 127.0.0.1 GET /admin/outer/index
+[ info ] wangying/admin/outer/index [运行时间：0.041002s][吞吐率：24.39req/s] [内存消耗：2,292.77kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'outer',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/outer/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Outer->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Outer.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\outer\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `outer` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `outer` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T18:26:27+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.056003s][吞吐率：17.86req/s] [内存消耗：2,509.46kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/outer/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-10T18:32:15+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.048003s][吞吐率：20.83req/s] [内存消耗：2,836.76kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=f6ot7m8qiq921m3s5traijvhr4',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.004000s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]

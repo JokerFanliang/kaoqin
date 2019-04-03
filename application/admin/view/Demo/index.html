@@ -1,0 +1,83 @@
+{include file="public/head"}
+<script type="text/javascript">
+
+    function del(id) {
+        layer.confirm('确定要删除吗？',  function(){
+            window.location.href="/admin/Demo/del?id="+id;
+        });
+    }
+</script>
+<div id="dcMain"><!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>Demo</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>
+      <a href="/admin/Demo/add"  class="actionBtn">添加</a>
+        Demo
+    </h3>
+    <div class="filter">
+        <form action="" method="post">
+         <select name="cat_id">
+          <option value="0">未分类</option>
+                      <option value="1"> 电子数码</option>
+                            <option value="4">- 智能手机</option>
+                            <option value="5">- 平板电脑</option>
+                            <option value="2"> 家居百货</option>
+                            <option value="3"> 母婴用品</option>
+                     </select>
+         <input name="keyword" type="text" class="inpMain" value="" size="20" />
+         <input name="submit" class="btnGray" type="submit" value="筛选" />
+        </form>
+        <span>
+            <form action="/admin/Demo/import" method="post" enctype="multipart/form-data" id="import">
+                <input type="file" name="excel" class="excel">
+                <input type="hidden" name="token" value="">
+                <a class="btnGray submit" href="javascript::void(0)">导入</a>
+            </form>
+            <a class="btnGray" href="/admin/Demo/export">导出</a>
+        </span>
+    </div>
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <th width="30" align="center">编号</th>
+                <th align="center">标题</th>
+                <th align="center">图片</th>
+                <th align="center">内容</th>
+                <th align="center">添加时间</th>
+                <th align="center">操作</th>
+            </tr>
+            {volist name='lists' id='list'}
+            <tr>
+                <td align="center">{$list->id}</td>
+                <td align="center">{$list->title}</td>
+                <td align="center">
+                  <img src="__STATIC__{$list->img}" width="100px">
+                </td>
+                <?php
+                    $string = $list->content;
+                    //把一些预定义的 HTML 实体转换为字符
+                    $html_string = htmlspecialchars_decode($string);
+                    //将空格替换成空
+                    $content = str_replace(" ", "", $html_string);
+                    //函数剥去字符串中的 HTML、XML 以及 PHP 的标签,获取纯文本内容
+                    $contents = strip_tags($content);
+                         
+                    //返回字符串中的前80字符串长度的字符
+                    $content = mb_substr($contents, 0, 30, "utf-8");
+                ?>
+                <td align="center">{$content}...</td>
+                <td align="center">{$list->create_time}</td>
+                <td align="center">
+                  <a href="{:url('Demo/edit')}?id={$list->id}">编辑</a> |
+                  <a href="javascript::void(0)" onclick="javascript:return del('{$list->id}')">删除</a>
+                </td>
+            </tr>
+            {/volist}
+         </table>
+         {$lists->render()}
+    </div>
+</div>
+<script>
+    $(".submit").click(function(){
+        $("#import").submit();
+    })
+</script>
+{include file="public/foot"}

@@ -1,0 +1,1310 @@
+---------------------------------------------------------------
+[ 2018-09-06T17:13:24+08:00 ] 127.0.0.1 GET /admin
+[ info ] wangying/admin [运行时间：0.212013s][吞吐率：4.72req/s] [内存消耗：1,363.13kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T17:13:26+08:00 ] 127.0.0.1 GET /admin/login/login.html
+[ info ] wangying/admin/login/login.html [运行时间：0.044003s][吞吐率：22.73req/s] [内存消耗：1,366.63kb] [文件加载：44]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T17:13:29+08:00 ] 127.0.0.1 POST /admin/login/login.html
+[ info ] wangying/admin/login/login.html [运行时间：0.235014s][吞吐率：4.26req/s] [内存消耗：2,256.70kb] [文件加载：53]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://wangying',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/login/login_html' => '',
+  'username' => 'admin',
+  'password' => '123123',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.050003s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `username` = 'admin'  AND `password` = '4297f44b13955235245b2497399d7a93' LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:13:29+08:00 ] 127.0.0.1 GET /admin/index/index.html
+[ info ] wangying/admin/index/index.html [运行时间：0.019001s][吞吐率：52.63req/s] [内存消耗：1,368.53kb] [文件加载：45]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/index/index_html' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Index.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T17:13:29+08:00 ] 127.0.0.1 GET /admin/admin/index.html
+[ info ] wangying/admin/admin/index.html [运行时间：0.077005s][吞吐率：12.99req/s] [内存消耗：2,343.52kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'admin',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/login/login.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/admin/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Admin->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Admin.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\admin\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `admin` LIMIT 1 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` ORDER BY `create_time` DESC LIMIT 0,10 [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:13:32+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.134008s][吞吐率：7.46req/s] [内存消耗：2,744.47kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/admin/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.028001s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:16:47+08:00 ] 127.0.0.1 GET /admin/daily/index.html
+[ info ] wangying/admin/daily/index.html [运行时间：0.055003s][吞吐率：18.18req/s] [内存消耗：2,744.10kb] [文件加载：58]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/daily/index_html' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.000000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:16:49+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.046003s][吞吐率：21.74req/s] [内存消耗：1,362.02kb] [文件加载：46]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [0]模板文件不存在:D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html[D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\library\think\view\driver\Think.php:82]
+---------------------------------------------------------------
+[ 2018-09-06T17:18:14+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.068004s][吞吐率：14.70req/s] [内存消耗：2,428.65kb] [文件加载：60]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+[ error ] [8]未定义变量: list[D:\phpStudy\PHPTutorial\WWW\wangying\runtime\temp\a99f2d709d8791f3249292d45a838ffe.php:116]
+---------------------------------------------------------------
+[ 2018-09-06T17:18:23+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.042002s][吞吐率：23.81req/s] [内存消耗：2,391.50kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.001000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:18:38+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,390.38kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:20:35+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.034002s][吞吐率：29.41req/s] [内存消耗：2,270.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:20:36+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.052003s][吞吐率：19.23req/s] [内存消耗：2,270.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:20:36+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.032002s][吞吐率：31.25req/s] [内存消耗：2,270.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:20:36+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.021001s][吞吐率：47.62req/s] [内存消耗：2,270.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:21:55+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.036002s][吞吐率：27.78req/s] [内存消耗：2,326.66kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:22:12+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.033002s][吞吐率：30.30req/s] [内存消耗：2,326.69kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T17:23:22+08:00 ] 127.0.0.1 POST /admin/Work/import
+[ info ] wangying/admin/Work/import [运行时间：0.453026s][吞吐率：2.21req/s] [内存消耗：7,169.32kb] [文件加载：107]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylHo4fiioCMkPJVAu',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://wangying',
+  'cache-control' => 'max-age=0',
+  'content-length' => '201505',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/import' => '',
+  'token' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->import[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T18:20:18+08:00 ] 127.0.0.1 POST /admin/Work/import
+[ info ] wangying/admin/Work/import [运行时间：0.132007s][吞吐率：7.58req/s] [内存消耗：6,795.84kb] [文件加载：107]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylHo4fiioCMkPJVAu',
+  'origin' => 'http://wangying',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '126753',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/import' => '',
+  'token' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->import[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T18:20:30+08:00 ] 127.0.0.1 POST /admin/Work/import
+[ info ] wangying/admin/Work/import [运行时间：0.151008s][吞吐率：6.62req/s] [内存消耗：6,790.05kb] [文件加载：107]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarylHo4fiioCMkPJVAu',
+  'origin' => 'http://wangying',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '126753',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/import' => '',
+  'token' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->import[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ LOG ] INIT File
+---------------------------------------------------------------
+[ 2018-09-06T18:28:43+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.028002s][吞吐率：35.71req/s] [内存消耗：2,327.66kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:28:44+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.026002s][吞吐率：38.46req/s] [内存消耗：2,327.98kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/daily/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003001s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:28:45+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.024001s][吞吐率：41.67req/s] [内存消耗：2,327.66kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:28:50+08:00 ] 127.0.0.1 POST /admin/Work/import
+[ info ] wangying/admin/Work/import [运行时间：0.305017s][吞吐率：3.28req/s] [内存消耗：6,826.72kb] [文件加载：110]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'import',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryEanzeQLMFMhp1xQo',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://wangying',
+  'cache-control' => 'max-age=0',
+  'content-length' => '126753',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/import' => '',
+  'token' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->import[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.066003s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王春艳（离职）' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张正' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李秀秀' , '财务部' , NULL , '18:24  ' , '08:25  \n18:33  ' , '08:38  \n18:33  ' , '08:24  \n18:24  ' , '08:32  \n19:46  ' , NULL , NULL , '08:17  \n18:45  ' , '08:20  \n18:40  ' , '08:25  \n18:25  ' , '08:24  \n18:05  ' , '08:27  \n18:27  ' , NULL , NULL , '08:23  \n18:51  ' , '08:26  \n18:09  ' , '08:20  \n18:22  ' , '08:24  \n18:25  ' , '08:23  \n18:40  ' , NULL , NULL , '08:23  \n18:30  ' , '08:29  \n18:32  ' , '08:23  \n18:39  ' , '08:16  \n18:57  ' , '08:24  \n12:06  ' , NULL , NULL , '08:34  \n18:30  ' , '08:11  \n18:14  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('牛欢' , '财务部' , NULL , '08:23  \n18:37  ' , '08:26  \n18:29  ' , '08:33  \n18:30  ' , '08:24  \n18:16  ' , '08:26  \n19:41  ' , NULL , NULL , '08:26  \n18:45  ' , '08:28  \n18:38  ' , '08:29  \n18:44  ' , '08:25  \n18:04  ' , NULL , NULL , NULL , '08:32  \n18:51  ' , '08:27  \n18:28  ' , '08:29  \n18:22  ' , '08:24  \n18:29  ' , '08:32  \n18:40  ' , NULL , NULL , '08:32  \n18:05  ' , NULL , NULL , '08:26  \n18:52  ' , '08:15  \n18:41  ' , NULL , NULL , '08:26  \n18:30  ' , '08:26  \n18:13  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王娟' , '财务部' , NULL , '07:22  \n17:15  ' , '08:04  ' , '08:26  ' , '08:14  ' , '08:28  ' , NULL , NULL , '08:53  ' , '08:33  ' , '08:32  ' , NULL , '08:27  ' , NULL , NULL , '08:33  ' , '08:20  ' , '08:33  ' , '08:53  \n17:17  ' , '08:25  ' , NULL , NULL , '08:30  \n17:04  ' , '08:08  ' , '08:26  ' , '08:34  \n17:23  ' , NULL , NULL , NULL , '07:59  ' , '08:30  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('韩挥戈' , '电商事业部' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('罗丹' , '电商事业部\n电商事业部-运营中心-项目部-大区一\n电商事业部-运营中心-项目部-大区一-泾源分公司' , '08:42  ' , '08:24  ' , NULL , NULL , NULL , NULL , NULL , NULL , '08:18  ' , NULL , NULL , NULL , NULL , NULL , NULL , '08:21  \n18:02  ' , '08:22  \n18:12  ' , '08:20  \n18:01  ' , '08:16  \n18:02  ' , '08:53  \n18:01  ' , NULL , NULL , '08:05  \n18:01  ' , NULL , NULL , NULL , NULL , '10:42  ' , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('吴朋辉' , '电商事业部\n电商事业部-商务中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('艾鑫' , '电商事业部-财务部\n财务部' , NULL , '08:18  \n18:22  ' , '19:06  ' , '08:09  \n18:25  ' , '08:06  \n18:41  ' , '08:04  \n19:35  ' , NULL , NULL , '08:26  \n18:34  ' , '08:16  \n18:23  ' , '08:09  \n18:16  ' , '08:09  \n18:27  ' , '08:09  \n18:27  ' , NULL , NULL , '08:14  \n18:50  ' , '08:11  \n18:26  ' , '08:16  \n18:21  ' , '08:13  \n18:29  ' , '08:08  \n18:28  ' , NULL , NULL , '08:18  \n18:19  ' , '08:22  \n18:38  ' , '08:13  \n18:37  ' , '08:24  \n18:51  ' , '08:19  \n18:41  ' , NULL , NULL , '18:28  ' , '08:08  \n18:13  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('楚敏娟' , '电商事业部-财务部\n财务部' , NULL , '19:37  ' , '08:31  ' , '08:26  \n18:30  ' , '08:24  \n18:44  ' , '08:29  \n19:41  ' , NULL , NULL , '08:26  \n18:45  ' , '08:22  \n18:17  ' , '08:32  \n20:55  ' , '08:24  \n20:56  ' , '08:18  \n18:27  ' , NULL , NULL , '08:29  \n18:51  ' , '08:25  \n18:27  ' , '08:29  \n18:23  ' , '08:31  \n18:29  ' , '08:34  \n18:40  ' , NULL , NULL , '18:30  ' , '08:29  \n18:31  ' , '08:36  \n18:39  ' , NULL , '08:29  \n18:41  ' , NULL , NULL , '08:33  \n19:28  ' , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('大米' , '电商事业部-财务部' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('可丽娜' , '电商事业部-财务部-采购中心\n财务部-结算支付中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王鹏' , '电商事业部-平台中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('何一茁' , '电商事业部-商务中心' , '08:52  ' , NULL , '08:33  \n18:00  ' , '08:23  \n18:06  ' , '08:23  \n18:12  ' , '08:21外出  ' , NULL , NULL , '08:30  \n21:20  ' , '08:30  \n18:17  ' , '08:25外出  ' , '18:13外出  ' , '08:19  \n18:21  ' , NULL , NULL , NULL , NULL , '08:18外出  ' , '08:14外出  ' , '08:21  \n18:36  ' , NULL , NULL , '08:27 外出 ' , '08:24外出  ' , '08:27  \n18:03  ' , '18:03 外出 ' , '08:14  \n18:11  ' , NULL , NULL , '08:26  \n18:44  ' , '18:21外出  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('樊梁' , '电商事业部-商务中心-技术中心' , NULL , '08:30  \n19:01  ' , '08:32  \n19:03  ' , '08:16  \n18:05  ' , '08:14  \n18:01  ' , '08:23  \n18:01  ' , NULL , NULL , '08:14  \n18:01  ' , '08:21  \n18:35  ' , '08:22  \n18:27  ' , '08:18  \n18:29  ' , '08:24  \n18:33  ' , NULL , NULL , '08:21  \n18:06  ' , '08:18  \n19:05  ' , '08:16  \n18:11  ' , '08:18  \n18:19  ' , '08:15  \n18:07  ' , NULL , NULL , '08:24  \n19:01  ' , '08:19  \n20:08  ' , '08:20  \n18:40  ' , '08:16  \n20:09  ' , '08:16  \n18:39  ' , NULL , NULL , '08:19  \n18:12  ' , '08:27  \n19:27  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李宇（离职）' , '电商事业部-商务中心-技术中心' , NULL , '08:17  \n18:05  ' , '08:22  \n18:10  ' , '08:24  \n18:08  ' , '08:14  \n18:06  ' , '08:10  \n18:09  ' , NULL , NULL , '08:28  \n18:05  ' , '08:15  \n18:12  ' , '08:12  \n18:13  ' , '08:27  \n18:08  ' , '08:09  \n18:06  ' , NULL , NULL , '08:16  \n18:05  ' , '08:27  \n18:05  ' , '08:16  \n18:12  ' , '08:09  \n18:06  ' , '08:19  \n18:08  ' , NULL , NULL , '08:19  \n18:10  ' , '08:15  \n18:07  ' , '08:21  \n18:02  ' , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('严倩' , '电商事业部-商务中心-技术中心' , NULL , '08:34  \n18:06  ' , '08:29  \n18:09  ' , '08:32  \n18:08  ' , '08:18  \n18:06  ' , '08:25  \n18:08  ' , NULL , NULL , '18:32  ' , '08:27  \n18:12  ' , '08:15  \n18:12  ' , '08:12  \n18:09  ' , '08:09  \n18:06  ' , NULL , NULL , NULL , '08:27  \n18:06  ' , '08:20  \n18:15  ' , '08:14  \n18:05  ' , '08:27  \n18:08  ' , NULL , NULL , '08:16  \n18:10  ' , '08:13  \n18:08  ' , '08:24  \n18:13  ' , '08:09  \n18:09  ' , '08:30  \n18:03  ' , NULL , NULL , '08:09  \n18:11  ' , '08:26  \n18:24  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('于旭杰' , '电商事业部-商务中心-技术中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张龙' , '电商事业部-商务中心-技术中心' , NULL , '08:14  \n18:05  ' , '08:25  \n18:11  ' , '07:33  \n18:07  ' , '08:11  \n18:03  ' , '08:20  \n18:09  ' , NULL , NULL , '08:25  \n18:00  \n18:03  ' , '08:08  \n18:06  ' , '08:29  \n18:03  ' , '08:29  \n18:03  ' , '08:27  \n18:45  ' , NULL , NULL , NULL , '08:26  \n18:03  ' , '08:20  \n18:00  ' , '07:58  \n18:08  ' , '08:25  \n18:12  ' , NULL , NULL , '08:22  \n18:51  \n18:55  ' , '08:23  \n18:08  \n18:17  ' , '08:26  \n18:06  ' , '08:24  \n18:00  ' , '08:26  \n18:56  ' , NULL , NULL , '08:22  \n18:06  ' , '08:25  \n18:15  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('侯鹏' , '电商事业部-商务中心-拓展部' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王冬冬' , '电商事业部-商务中心-拓展部' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王鹏莉' , '电商事业部-商务中心-拓展部' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('徐珂' , '电商事业部-商务中心-拓展部' , NULL , '08:19  \n18:16  ' , '08:17  \n18:18  ' , '08:19  \n19:17  ' , '08:22  \n18:29  ' , '08:22  \n18:07  ' , NULL , NULL , NULL , '13:21  \n18:11  ' , '08:06外出  ' , '08:30  \n18:06  ' , '08:27  \n18:11  ' , NULL , NULL , NULL , '08:16  \n18:08  ' , '08:20外出  ' , '08:18  \n18:14  ' , '08:19  \n18:28  ' , NULL , NULL , '08:17外出  ' , '08:23  \n18:03  ' , '08:19  \n18:03  ' , '08:24  \n18:02  \n18:03  ' , '08:21  \n18:00  ' , NULL , NULL , '08:18  \n18:22  ' , '08:21  \n18:05  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('石超（离职）' , '电商事业部-运营中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '18:33  ' , '08:25  \n18:36  ' , '08:17  ' , '08:10  \n18:04  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('唐伟' , '电商事业部-运营中心' , NULL , '09:54  ' , '08:08  \n19:38  ' , '18:02  ' , '07:48  \n18:00  ' , '07:56  \n18:02  ' , '07:53  \n21:11  ' , NULL , '07:55  \n18:03  ' , '07:57  \n20:36  \n20:36  ' , '08:01  \n18:12  ' , '07:50  \n18:00  ' , '07:56  \n18:03  ' , '07:58  \n22:02  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '16:00  ' , NULL , NULL , '07:55  \n18:14  ' , '08:26  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王博' , '电商事业部-运营中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '14:21  \n18:04  ' , NULL , NULL , '08:26  \n18:06  ' , '08:14  \n18:05  ' , '08:14  \n18:00  \n18:08  ' , '08:29  \n18:43  ' , '08:28  ' , NULL , NULL , '08:19  \n18:02  ' , '08:22  \n18:02  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王莹' , '电商事业部-运营中心' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '18:55  ' , '08:24  \n18:09  ' , '08:29  ' , '08:27  \n18:30  ' , '08:27  \n18:05  ' , NULL , NULL , '08:23  \n18:19  ' , '08:27  \n18:07  ' , '08:28  \n18:33  ' , '08:26  \n18:09  ' , '08:27  \n18:31  ' , NULL , NULL , '08:23  \n18:49  ' , '08:24  \n18:17  ' , '08:28  \n18:02  \n20:27  ' , '08:33  ' , '08:23  ' , NULL , NULL , '08:26  ' , '08:20  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('程雪姣' , '电商事业部-运营中心-电商运营部' , NULL , '07:59  \n18:08  ' , NULL , NULL , '08:16  \n18:06  ' , '07:57  \n18:13  ' , NULL , NULL , '08:17  \n18:09  ' , '08:36  \n18:10  ' , '07:56  ' , '07:57  ' , '07:44  \n18:00  ' , NULL , NULL , NULL , NULL , NULL , '08:25  ' , NULL , NULL , NULL , '08:21  ' , NULL , NULL , '08:00  \n19:04  ' , NULL , NULL , NULL , NULL , '07:59  \n18:20  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李博（离职）' , '电商事业部-运营中心-电商运营部' , NULL , '08:37  \n18:01  ' , '08:23  \n13:05  ' , NULL , NULL , '15:36  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李楠' , '电商事业部-运营中心-电商运营部' , NULL , NULL , NULL , '08:32  \n18:08  ' , '07:56  \n18:09  ' , '08:12  \n18:22  ' , NULL , '08:17  \n18:01  ' , '07:59  \n18:02  ' , '08:13  ' , '08:20  \n18:13  ' , '08:22  \n18:14  ' , '08:22  \n18:06  ' , '08:21  \n18:00  ' , NULL , '08:21  \n18:01  ' , '08:22  \n22:35  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('罗倩' , '电商事业部-运营中心-电商运营部' , NULL , NULL , '09:00  \n20:45  ' , '09:01  \n18:03  ' , '08:59  \n18:12  ' , '08:58  \n18:17  ' , '09:00  \n23:09  ' , NULL , '09:05  \n18:35  ' , '08:17  \n18:01  ' , '08:19  \n18:01  ' , '08:30  \n18:38  ' , '08:18  \n19:00  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:17  \n20:51  ' , '08:27  \n19:08  ' , '08:22  \n19:02  ' , '08:04  \n19:08  ' , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('蒙萌' , '电商事业部-运营中心-电商运营部' , NULL , '08:05  \n18:08  ' , NULL , '08:18  ' , '08:02  \n18:10  ' , '08:14  \n18:09  ' , NULL , NULL , '08:12  \n18:06  ' , '07:57  \n18:15  ' , '08:00  \n18:12  ' , '08:02  \n18:12  ' , '08:05  \n18:12  ' , NULL , NULL , '08:07  \n18:11  ' , '08:02  \n18:08  ' , '08:17  \n18:13  ' , '08:09  \n18:09  ' , '08:08  \n18:12  ' , NULL , NULL , '08:10  \n18:16  ' , '08:05  \n18:10  \n18:11  ' , '08:01  \n18:40  ' , '08:05  ' , '08:10  \n18:07  ' , NULL , NULL , NULL , '07:59  \n18:10  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张晶（离职）' , '电商事业部-运营中心-电商运营部' , '08:49  ' , '08:25  \n18:06  ' , '08:45  \n18:05  ' , NULL , NULL , '08:35  \n18:01  ' , NULL , NULL , '08:43  \n18:01  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张姣姣' , '电商事业部-运营中心-电商运营部' , NULL , '08:25  \n18:33  ' , '08:27  \n18:45  ' , '08:29  \n18:18  ' , '08:22  \n18:22  ' , '08:27  \n12:09  ' , NULL , NULL , '08:24  \n18:39  ' , '08:24  \n18:29  ' , '08:29  \n18:15  ' , '08:33  \n18:29  ' , '08:27  \n18:29  ' , NULL , NULL , NULL , '08:14  \n18:11  ' , '08:15  \n18:11  ' , '08:10  ' , '08:15  \n18:31  ' , NULL , NULL , '08:21  \n18:48  ' , '08:23  \n18:17  ' , '08:20  \n12:17  ' , '07:56  ' , '08:19  \n13:29  ' , NULL , NULL , '08:20  \n18:17  ' , '08:26  \n18:58  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('景润润' , '电商事业部-运营中心-美工设计' , NULL , '08:23  \n18:11  ' , '08:31  \n18:23  ' , '08:26  \n18:18  ' , '08:29  \n18:46  ' , '08:29  \n18:17  ' , NULL , NULL , '08:26  \n18:40  ' , '08:29  \n18:56  ' , '08:23  \n18:14  ' , '08:33  \n12:02  ' , '08:27  \n18:24  ' , NULL , NULL , '08:29  \n18:19  ' , '08:23  \n12:35  ' , '08:29  \n18:09  ' , '08:29  \n19:55  ' , '08:27  \n18:30  ' , NULL , NULL , '08:08  \n19:19  ' , '08:24  \n18:05  ' , '08:35  \n18:47  ' , '08:14  \n18:52  ' , '08:27  \n13:29  ' , NULL , NULL , '08:22  \n18:02  ' , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('刘美卓' , '电商事业部-运营中心-美工设计' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '10:39  \n18:49  ' , '08:26  ' , NULL , NULL , '08:22  \n18:00  ' , '08:26  \n18:03  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张敏' , '电商事业部-运营中心-美工设计' , '08:33  \n15:32  ' , '08:14  \n18:05  ' , '08:25  \n18:05  ' , '08:08  \n18:07  ' , '08:11  \n12:13  ' , NULL , NULL , NULL , '08:25  \n18:04  ' , '08:08  \n18:06  ' , '08:29  \n18:03  ' , '08:29  \n18:04  ' , '08:27  \n18:45  ' , NULL , NULL , '08:10  \n18:23  ' , '08:30  \n18:04  ' , '08:19  \n18:22  ' , '07:58  \n18:11  ' , '08:25  \n18:11  ' , NULL , NULL , '08:22  \n18:55  ' , '08:24  \n18:10  ' , '08:25  \n19:51  ' , '08:24  \n18:49  ' , '08:26  \n18:57  ' , NULL , NULL , '08:22  \n18:25  ' , '08:24  \n18:15  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('赵丽萍' , '电商事业部-运营中心-美工设计' , NULL , '08:36  \n18:15  ' , NULL , NULL , '08:19  \n18:03  ' , '08:29  \n18:17  ' , NULL , NULL , '08:35  \n18:07  ' , '08:29  \n18:05  ' , '08:29  \n18:05  ' , '08:33  \n18:07  ' , NULL , NULL , NULL , '08:23  \n18:04  ' , '08:32  \n18:29  ' , '08:22  \n18:07  ' , '08:20  \n18:15  ' , NULL , NULL , NULL , NULL , NULL , '08:22  \n18:50  ' , '08:14  \n18:49  ' , '08:15  ' , NULL , NULL , '08:22  \n18:07  ' , '08:30  \n19:13  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('罗宏涛' , '电商事业部-运营中心-培训部' , '15:34  ' , '08:47  \n12:23  ' , '08:46  \n18:27  ' , '08:18  \n19:36  ' , NULL , '08:06  \n18:23  ' , NULL , NULL , '08:32  \n18:41  ' , '08:18  \n18:30  ' , '08:23  \n18:55  ' , '08:25  \n18:30  ' , '08:24  \n19:18  ' , NULL , NULL , '08:20  ' , NULL , '11:53  \n18:28  ' , '08:21  \n20:44  ' , '13:06  ' , NULL , NULL , '07:54  ' , NULL , NULL , NULL , '07:59  ' , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李阳阳' , '电商事业部-运营中心-文案策划' , NULL , '08:25  \n18:33  ' , '08:27  ' , '08:18  ' , '08:22  \n18:22  ' , '08:27  \n18:30  ' , NULL , NULL , '08:24  \n18:39  ' , '08:24  \n18:30  ' , '08:29  \n18:15  ' , '08:30  \n18:41  ' , '08:27  \n18:29  ' , NULL , NULL , '08:17  \n18:15  ' , '08:20  \n18:07  ' , '08:28  \n18:33  ' , '08:11  \n18:14  ' , '08:15  \n18:27  ' , NULL , NULL , '08:21  \n18:48  ' , '08:23  \n18:17  ' , '08:20  \n19:41  ' , '08:12  \n19:03  ' , '08:26  ' , '08:30  ' , NULL , '08:20  \n18:17  ' , '08:26  \n18:58  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王南' , '电商事业部-运营中心-文案策划' , '08:55  \n15:35  ' , NULL , '08:22  \n18:26  ' , '09:53  \n18:28  ' , '08:30  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:23  \n18:34  ' , '08:29  ' , '08:28  \n18:31  ' , '08:29  ' , '08:28  \n18:29  ' , NULL , NULL , '08:23  \n18:44  ' , '08:18  \n18:39  ' , '08:27  \n21:17  ' , '08:27  \n19:59  ' , NULL , '23:18  ' , NULL , '08:08  \n18:50  ' , '08:23  \n20:46  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张新曼' , '电商事业部-运营中心-文案策划' , NULL , NULL , '08:28  \n18:21  ' , '08:30  \n18:04  ' , '08:27  \n18:03  ' , '08:32  \n18:00  ' , NULL , NULL , NULL , NULL , NULL , '08:33  ' , NULL , NULL , NULL , '18:12  ' , '08:44  ' , '08:49  \n18:06  ' , '08:23  ' , '08:33  ' , NULL , NULL , '08:33  \n18:11  ' , '08:22  \n18:27  ' , '08:27  \n21:17  \n21:18  ' , '08:21  \n18:47  \n19:04  ' , '08:32  ' , NULL , NULL , '08:39  ' , '08:45  \n18:56  \n20:46  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('赵丽华' , '电商事业部-运营中心-文案策划' , NULL , '08:36  \n18:16  ' , NULL , '08:36  \n18:21  ' , '08:19  \n18:18  ' , '08:29  \n12:30  ' , NULL , NULL , '08:37  \n18:07  ' , '08:29  ' , '08:29  \n18:05  ' , '08:33  ' , '08:35  \n18:27  ' , NULL , NULL , '08:23  \n18:01  ' , '08:32  ' , '08:22  \n18:07  ' , '08:20  \n18:13  ' , '08:41  ' , NULL , NULL , '08:21  \n18:12  ' , '08:23  \n12:29  ' , '13:26  \n21:17  ' , '08:14  \n19:03  ' , '08:15  ' , NULL , NULL , '08:22  ' , '08:30  \n18:20  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王斯尧' , '电商事业部-运营中心-项目部-大区二\n电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:30  \n18:11  ' , '08:13  \n18:04  ' , '08:14  \n18:16  ' , '08:13  \n18:49  ' , '08:19  \n18:06  ' , NULL , NULL , '18:02  ' , '08:16  \n18:07  ' , '08:16  \n18:03  ' , '08:15  \n18:05  ' , '08:21  \n18:02  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:30  \n18:20  ' , '07:58  \n18:12  ' , '08:08  \n18:06  ' , '07:45  \n18:08  ' , '08:08  \n18:10  ' , NULL , NULL , '18:03  ' , '08:01  \n18:22  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('段升航（离职）' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:00  \n18:02  ' , '08:18  \n19:04  ' , '08:19  \n18:31  ' , '07:47  \n18:50  ' , '08:23  \n18:02  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('冯雨萌' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:07  \n08:08  \n18:02  ' , '08:16  \n18:06  ' , '08:21  \n18:15  ' , NULL , NULL , NULL , NULL , NULL , '08:20  ' , '08:29  \n18:07  ' , '08:28  \n18:09  ' , '08:27  \n18:00  ' , '08:32  \n18:00  ' , NULL , NULL , '08:30  \n18:01  ' , '08:17  \n18:08  ' , '08:24  \n18:07  ' , '08:23  \n18:18  ' , '08:28  \n18:11  ' , NULL , '08:19  \n18:03  ' , '18:54  ' , '08:21  \n18:06  ' , '08:19  \n18:03  ' , '08:23  \n18:04  ' , '08:20  \n18:01  ' , NULL , '08:17  \n18:03  ' , '08:22  \n18:04  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('何依' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:12  \n18:05  ' , '08:18  \n18:09  ' , '08:27  \n18:02  ' , '08:23  \n18:09  ' , '08:16  \n18:03  ' , '08:26  \n18:05  ' , NULL , '08:22  \n18:09  \n18:09  \n18:11  \n18:11  ' , '08:16  \n18:26  ' , '08:15  \n18:07  ' , '08:21  \n18:05  ' , '08:21  \n08:21  \n18:07  ' , '08:22  \n18:03  ' , NULL , '08:22  \n18:06  ' , '08:21  \n18:05  ' , '08:17  \n18:08  ' , '08:25  \n18:06  ' , '08:23  \n18:19  ' , '08:28  \n18:11  ' , NULL , '08:18  \n18:06  ' , '08:22  \n18:40  ' , '08:20  \n18:31  ' , '08:19  \n18:03  ' , '08:23  \n18:06  ' , NULL , NULL , '08:17  \n18:03  ' , '08:21  \n18:08  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李斌强' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:08  \n18:07  ' , '07:55  \n19:04  ' , '08:12  \n18:32  ' , '07:59  \n18:50  ' , '08:10  \n18:31  ' , '08:24  \n18:07  ' , NULL , NULL , NULL , NULL , '07:56  \n18:06  ' , '08:21  \n18:25  ' , '08:15  \n18:02  ' , NULL , '08:12  \n18:01  ' , '08:07  \n18:01  ' , '08:13  \n18:01  ' , '08:10  \n18:03  ' , '08:20  \n18:09  ' , '08:10  \n18:02  ' , NULL , '08:15  \n18:08  ' , '07:59  \n18:36  ' , '08:08  \n18:11  ' , '07:55  \n18:03  ' , '08:07  \n18:30  ' , '08:16  \n18:02  ' , NULL , '08:03  \n18:02  ' , '07:57  \n18:31  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李英浩' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:00  \n18:00  ' , '08:11  ' , NULL , '07:26  \n18:02  ' , '07:58  \n18:03  ' , '08:01  \n18:04  ' , NULL , '08:05  \n18:00  ' , '08:04  \n18:09  ' , '07:47  \n18:02  ' , '07:44  \n18:01  ' , '08:00  \n18:01  ' , '07:59  \n18:00  ' , NULL , '08:01  \n18:00  ' , '07:59  \n18:00  ' , '08:05  \n18:00  ' , '08:03  \n18:00  ' , '08:07  \n18:00  ' , '08:00  \n18:01  ' , NULL , '08:07  \n18:00  ' , '07:58  \n18:00  ' , '08:01  \n18:00  ' , '08:03  \n18:00  ' , '08:05  \n18:00  ' , NULL , NULL , '08:03  \n18:01  ' , '07:52  \n18:00  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马文龙' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , NULL , NULL , '18:06  ' , '08:22  \n18:05  ' , '08:28  \n18:15  ' , '08:24  \n19:03  ' , NULL , '08:26  \n18:09  ' , NULL , NULL , NULL , NULL , NULL , NULL , '08:21  \n18:00  \n18:01  ' , '08:26  \n18:04  ' , '08:24  \n18:01  ' , '08:32  \n18:04  ' , '08:25  \n18:03  ' , '08:28  \n18:04  ' , NULL , '08:23  \n18:03  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王佳奕' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:05  \n18:06  ' , '07:56  \n18:05  ' , '08:13  \n18:13  ' , '07:36  \n18:09  ' , '07:58  \n18:03  ' , '07:52  \n18:02  ' , NULL , '07:58  \n18:03  ' , '07:54  \n18:07  ' , '08:01  \n18:03  ' , '07:55  \n18:06  ' , '08:00  \n18:18  ' , '08:15  \n18:02  ' , NULL , '08:09  \n18:03  ' , '08:07  \n18:02  ' , '08:12  \n18:02  ' , '08:08  \n18:03  ' , '08:18  \n18:02  ' , '08:11  \n18:02  ' , NULL , '08:15  \n18:05  ' , '08:12  \n18:35  ' , '08:14  \n18:09  ' , '07:55  \n18:03  ' , '08:07  \n18:30  ' , '08:17  \n18:02  ' , NULL , '08:02  \n18:02  ' , '07:56  \n18:02  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王宇' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:25  \n18:02  ' , '08:11  \n19:05  ' , '08:28  \n18:30  ' , '07:50  \n18:49  ' , '08:06  \n22:23  ' , '08:12  \n18:07  ' , NULL , '08:00  \n18:03  ' , '08:04  \n18:10  ' , '08:10  \n18:17  ' , '07:53  \n18:04  ' , '08:09  \n18:29  ' , '08:18  \n18:04  ' , NULL , '07:57  \n18:01  ' , '08:10  \n18:02  ' , '08:15  \n18:02  ' , '08:18  \n18:02  ' , '08:11  \n18:08  ' , '08:03  \n18:01  ' , NULL , '07:38  \n18:09  ' , '07:34  \n18:04  ' , '08:07  \n18:05  ' , '08:02  \n18:03  ' , '08:11  \n18:06  ' , NULL , NULL , '08:08  \n18:02  ' , '08:12  \n18:31  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张珂' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:03  \n18:21  ' , '08:07  \n18:03  ' , '08:21  \n18:04  ' , '07:41  \n18:13  ' , '08:07  \n18:01  ' , '08:22  \n18:12  ' , NULL , '08:22  \n18:06  ' , NULL , '08:07  \n18:16  ' , '08:16  \n18:02  ' , '08:09  \n18:18  ' , '08:18  \n18:06  ' , NULL , '08:14  \n18:03  ' , '08:12  \n18:01  ' , '08:13  \n18:03  ' , '08:18  \n18:04  ' , NULL , NULL , NULL , '07:38  \n18:09  ' , '07:50  \n18:43  ' , '07:34  \n18:04  ' , '07:59  \n18:02  ' , '08:10  \n18:05  ' , '08:05  \n18:01  ' , NULL , '08:03  \n18:02  ' , '07:39  \n18:02  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('赵坤' , '电商事业部-运营中心-项目部-大区二-三原分公司' , NULL , '08:30  \n18:08  ' , '08:13  \n18:08  ' , '08:21  \n18:15  ' , '07:47  \n18:09  ' , '08:23  \n18:04  ' , NULL , NULL , '08:17  \n18:03  ' , '18:25  ' , '08:15  \n18:07  ' , '08:20  \n18:08  ' , '08:20  \n18:07  ' , '08:32  \n18:01  ' , NULL , '08:20  \n18:02  ' , '08:07  \n18:02  ' , '08:23  \n18:03  ' , '08:19  \n18:07  ' , '08:23  \n18:18  ' , '08:29  \n18:04  ' , NULL , '08:14  \n18:07  ' , '08:15  \n18:05  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('何霖' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '08:35  \n18:01  ' , '08:24  \n18:08  ' , '08:26  \n18:02  ' , '08:24  \n18:27  ' , '08:26  \n18:02  \n18:02  ' , '08:23  \n18:01  ' , NULL , '08:29  \n18:06  ' , '08:24  \n18:20  \n18:20  ' , '08:26  \n18:08  ' , '08:25  \n18:07  ' , '08:25  ' , '08:07  \n18:00  ' , NULL , '08:19  ' , '18:03  ' , NULL , '08:14  \n18:01  \n18:02  ' , '08:08  \n18:06  ' , '08:29  \n18:01  ' , NULL , '08:20  \n19:54  \n19:54  ' , '08:25  \n18:02  ' , NULL , '08:28  \n18:49  ' , '08:22  \n18:01  ' , '08:25  \n18:30  ' , NULL , '08:16  \n18:35  ' , '08:25  \n18:01  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('雷秋丽' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , NULL , '08:31  \n18:10  ' , '08:17  \n18:01  ' , '08:19  \n18:28  ' , '08:25  \n18:09  ' , '08:24  \n18:06  ' , NULL , '08:19  \n18:12  ' , '08:33  \n18:26  ' , '08:30  \n18:09  ' , '08:20  \n18:01  ' , '08:24  \n18:04  ' , '08:31  \n18:02  ' , NULL , '08:29  \n18:00  ' , '18:17  ' , '18:22  ' , '08:08  \n18:34  ' , NULL , NULL , NULL , '08:33  \n18:59  ' , '08:21  \n18:07  ' , '07:17  ' , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马滩' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:30  \n18:21  ' , '08:22  \n18:02  ' , '08:10  \n18:04  ' , '08:16  \n18:02  ' , NULL , '08:17  \n18:01  ' , '07:12  \n18:03  ' , '08:30  \n18:02  \n18:03  ' , '08:22  \n18:34  ' , '07:29  \n18:02  ' , '07:02  \n18:01  ' , NULL , '08:22  \n08:22  \n18:01  \n18:02  ' , '08:07  \n18:02  ' , NULL , NULL , '08:19  \n08:20  \n18:03  ' , '08:25  \n18:02  ' , NULL , '08:21  \n18:01  ' , '08:18  \n18:03  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('秋燕' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '08:20  \n18:08  ' , '08:26  \n18:13  ' , '08:07  \n18:11  ' , '08:17  \n18:28  ' , '08:25  \n18:00  ' , '08:24  \n18:05  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:29  \n18:03  ' , NULL , NULL , '08:06  \n18:00  ' , NULL , NULL , NULL , '08:25  \n18:55  ' , '08:21  \n18:14  ' , NULL , NULL , '08:19  \n18:07  ' , '08:26  \n18:59  ' , NULL , '08:23  \n18:12  ' , '08:15  \n18:11  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('苏龙（离职）' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , NULL , '08:27  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('田亮亮' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '22:41  ' , '08:26  \n18:14  ' , '08:24  \n18:16  ' , '08:17  \n18:35  ' , '08:23  \n18:17  ' , '08:19  \n18:07  ' , NULL , '08:19  \n18:16  ' , '08:17  \n18:52  ' , '08:16  \n18:30  ' , '08:18  \n18:11  ' , '08:20  \n18:05  ' , NULL , NULL , '08:25  \n22:20  ' , '08:25  \n18:30  ' , '08:28  \n19:01  ' , '08:21  \n22:52  ' , '08:31  \n18:42  ' , '07:51  \n18:02  ' , NULL , '08:16  \n18:57  ' , '08:19  \n19:02  ' , '08:29  \n18:09  ' , '08:20  \n18:49  ' , '08:12  ' , NULL , NULL , '08:29  \n18:22  ' , '08:28  \n18:57  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('汪本全' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , NULL , NULL , '18:03  ' , '08:17  \n18:32  ' , '08:22  \n18:01  ' , '08:23  \n18:02  ' , NULL , '08:16  \n18:00  ' , NULL , '08:15  \n18:03  ' , '08:20  \n18:01  ' , '08:20  \n18:20  ' , '08:22  \n18:00  ' , NULL , '08:20  \n08:20  \n18:12  ' , '07:21  \n18:01  ' , '07:07  \n18:02  \n18:03  ' , '08:18  \n18:00  ' , NULL , NULL , NULL , '08:32  \n19:55  \n19:56  \n20:01  ' , '08:26  \n18:00  ' , '08:25  \n18:00  ' , '08:21  \n18:47  ' , '08:12  \n18:00  ' , NULL , NULL , '08:24  \n18:00  ' , '08:26  \n18:04  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王刚（离职）' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '08:21  \n18:00  ' , '08:38  \n18:03  \n18:03  ' , '08:25  \n18:02  ' , '08:21  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张鑫（离职）' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '08:27  \n18:03  ' , '08:19  \n18:05  ' , '08:31  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('晏普龙' , '电商事业部-运营中心-项目部-大区二-旬阳分公司' , NULL , '08:19  \n18:06  ' , '08:25  \n18:09  ' , '08:23  \n18:13  ' , '08:18  \n18:22  ' , '08:22  \n18:16  ' , '08:24  \n18:04  ' , NULL , '08:24  \n18:10  ' , '08:31  \n18:22  ' , '08:14  \n18:09  ' , '08:34  \n18:11  ' , '08:20  \n18:07  ' , '08:20  \n18:11  ' , NULL , '08:28  \n18:09  ' , '08:17  \n18:02  ' , '08:28  \n18:21  ' , '08:19  \n18:11  ' , '08:19  \n18:43  ' , NULL , NULL , '08:26  \n18:53  ' , '08:26  \n18:14  ' , '08:26  \n18:10  ' , '08:19  \n18:47  ' , '08:12  ' , '08:28  \n18:28  ' , NULL , '08:30  \n18:28  ' , '08:23  \n18:08  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('陈佳' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , NULL , NULL , '18:02  ' , '07:48  \n18:02  ' , '07:54  \n18:06  ' , '07:53  \n18:11  ' , NULL , '07:53  \n18:07  ' , '07:56  \n21:19  ' , '07:59  \n18:12  ' , '07:49  \n20:44  ' , '07:56  \n18:36  ' , '07:58  \n20:18  ' , NULL , NULL , '07:58  \n18:07  ' , '07:53  \n20:13  ' , '07:58  \n19:11  ' , '07:59  \n18:07  ' , '07:58  \n18:10  \n18:10  ' , NULL , '07:56  \n19:04  ' , '07:36  \n18:05  ' , '07:58  \n18:03  ' , '07:59  \n18:49  ' , '07:57  \n18:04  ' , '07:44  \n20:49  ' , NULL , NULL , '07:57  \n20:28  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('陈天婷' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , '07:52  \n18:10  ' , '07:55  \n18:37  ' , '07:59  \n18:04  ' , '07:52  \n18:02  ' , '07:52  \n18:08  ' , '07:52  \n18:51  ' , NULL , '07:52  \n18:08  ' , '07:56  \n18:15  ' , '07:56  \n18:14  ' , '07:56  \n18:06  ' , '07:58  \n18:02  ' , '07:55  \n18:04  ' , NULL , '07:57  \n18:07  ' , '07:58  \n18:09  ' , '07:53  \n18:04  ' , '07:54  \n18:17  ' , '07:55  \n18:03  ' , '07:53  \n18:06  ' , NULL , '07:57  \n18:10  ' , '07:51  \n18:08  ' , '07:54  \n19:01  ' , '07:53  \n19:02  ' , '07:55  \n18:06  ' , '07:50  \n18:35  ' , NULL , '07:57  \n18:14  ' , '07:52  \n18:00  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('刘富祥' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , '07:24  \n18:12  ' , '07:20  \n18:48  ' , '07:30  \n18:02  ' , '07:35  \n18:02  ' , '07:25  \n18:06  ' , '07:37  \n18:06  ' , NULL , '07:37  \n18:03  ' , '07:44  \n18:03  ' , '07:40  \n18:11  ' , '07:40  \n18:52  ' , '07:30  \n19:52  ' , '07:32  \n20:18  ' , NULL , '07:45  \n18:15  ' , '07:39  \n18:04  ' , '07:31  \n18:05  ' , '07:35  \n18:10  ' , '07:31  \n18:07  ' , '07:47  \n18:27  ' , NULL , '07:33  \n18:04  ' , '07:37  \n18:04  ' , '07:36  \n18:05  ' , '07:28  \n18:49  ' , '07:44  \n18:05  ' , '07:43  \n18:05  ' , NULL , '07:38  \n18:04  ' , '07:45  \n18:04  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('刘顺（离职）' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('罗晶晶' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , '07:55  \n19:59  ' , '07:52  \n18:04  ' , '07:55  \n18:04  ' , '07:55  \n18:02  ' , '07:53  \n20:36  ' , '07:51  \n18:11  ' , NULL , '07:54  \n18:06  ' , '07:59  \n21:18  ' , '07:54  \n18:03  ' , '07:49  \n18:06  ' , '08:13  \n18:05  ' , '07:54  \n18:05  ' , NULL , NULL , '07:56  \n18:07  ' , '07:52  \n18:03  ' , '07:54  \n18:05  ' , '07:58  \n18:07  ' , '06:59  \n18:01  ' , NULL , '07:59  \n19:04  ' , '07:36  \n18:10  ' , '07:57  \n18:03  ' , '07:52  \n18:49  ' , '07:57  \n18:04  ' , '07:59  \n18:55  ' , NULL , '07:56  \n20:52  ' , '07:55  \n18:09  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马倩茹（离职）' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '07:53  \n19:05  ' , '07:57  \n07:58  \n20:18  ' , '07:57  \n18:04  ' , '07:50  \n18:00  ' , '07:52  \n18:02  ' , '07:53  \n18:04  ' , NULL , '07:51  \n18:07  ' , '07:53  \n18:05  ' , '07:52  \n21:03  ' , '07:55  \n18:05  ' , '07:55  \n18:05  ' , '07:55  \n07:55  \n18:05  ' , NULL , '07:53  \n18:09  ' , '08:01  \n18:03  ' , '07:57  \n18:02  ' , '07:58  \n18:49  ' , '07:54  \n18:03  ' , '07:46  ' , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('任国靖' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , NULL , '08:23  \n19:52  ' , '08:08  \n19:24  ' , '08:30  \n18:05  ' , NULL , NULL , NULL , NULL , NULL , '08:18  ' , NULL , '07:56  \n18:35  ' , '07:58  \n22:02  ' , '07:57  ' , '07:54  \n18:15  \n18:15  ' , '07:57  \n18:08  ' , '07:52  \n20:13  ' , '07:55  \n18:33  ' , '07:58  \n18:05  ' , '07:58  \n18:00  ' , NULL , '07:55  \n18:00  ' , '07:54  \n18:11  ' , '08:39  \n18:05  ' , '07:58  \n18:07  ' , '07:57  \n18:04  ' , '07:45  \n21:01  ' , NULL , '08:00  \n18:08  ' , '07:56  \n19:26  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('曾颖' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , '07:55  \n18:56  ' , '07:51  \n18:04  ' , '07:54  \n18:03  ' , '07:47  \n18:02  ' , '07:50  \n18:03  ' , '07:51  \n18:11  ' , NULL , '07:53  \n18:06  ' , '07:53  \n18:00  ' , '07:55  \n18:02  ' , '07:50  \n18:39  ' , '07:52  \n18:15  ' , '07:53  \n18:04  ' , NULL , '07:57  \n18:09  ' , '07:54  \n18:06  ' , '07:52  \n18:02  ' , '07:55  \n18:11  ' , '07:54  \n18:01  ' , '07:55  \n18:06  ' , NULL , '07:20  \n18:35  ' , '07:52  \n18:02  ' , '07:57  \n18:03  ' , '07:58  \n18:50  ' , '07:54  \n18:04  ' , '07:45  \n18:17  ' , NULL , '07:57  \n18:03  ' , '07:54  \n18:10  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('朱国辉' , '电商事业部-运营中心-项目部-大区二-岚皋分公司' , NULL , '07:54  \n18:11  ' , '07:51  \n18:15  ' , '07:58  \n18:03  ' , '07:55  \n18:01  ' , '07:58  \n18:06  ' , '07:53  \n18:06  ' , NULL , '07:56  \n18:01  ' , '07:44  \n21:39  ' , '07:52  \n18:12  ' , '07:56  \n19:58  ' , '07:56  \n18:05  ' , '07:53  \n22:51  ' , NULL , '07:55  \n18:14  ' , '07:55  \n18:04  ' , '07:56  \n21:41  ' , '07:52  \n18:15  ' , '07:55  \n18:07  ' , '07:56  \n18:32  ' , NULL , '07:55  \n18:04  ' , '07:55  \n18:07  ' , '07:56  \n18:04  ' , '07:53  \n18:21  ' , '07:53  \n18:02  ' , '08:00  \n19:14  ' , NULL , '08:02  \n18:02  ' , '07:55  \n18:07  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('郭麟晶' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , '08:48  \n18:40  ' , '07:45  \n17:32  \n17:33  ' , '07:42  \n17:31  \n17:32  ' , '07:49  \n17:31  ' , '07:37  \n17:33  ' , '07:44  \n17:31  ' , NULL , '08:57  \n17:50  ' , '07:46  \n17:36  ' , '07:43  \n17:32  ' , '07:46  \n17:31  ' , '07:55  \n17:32  ' , '07:41  \n17:36  ' , NULL , '08:47  \n17:48  ' , '07:54  \n17:45  ' , '07:50  \n17:31  ' , '07:45  \n17:31  ' , '07:59  \n17:32  ' , '07:47  \n17:55  ' , NULL , '08:32  \n18:55  ' , '07:49  \n17:31  ' , '07:47  \n17:34  ' , '07:48  \n17:31  ' , '07:40  \n17:30  ' , '07:10  ' , NULL , NULL , '07:32  \n18:20  ' , '07:46  \n17:36  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('郝维超' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , '07:56  \n20:42  \n20:42  ' , '08:00  \n19:46  ' , '07:56  \n17:33  ' , '07:56  \n22:14  ' , '07:59  \n17:30  ' , NULL , '07:43  \n19:03  \n19:03  ' , NULL , NULL , NULL , NULL , NULL , '08:04  \n18:03  ' , NULL , '07:49  \n17:40  ' , '07:50  \n18:02  ' , '07:43  \n17:37  ' , '07:44  \n17:58  ' , '07:43  \n18:37  ' , '08:59  \n17:31  ' , NULL , '18:11  ' , '07:57  \n18:48  ' , '07:54  \n18:15  ' , '07:49  \n17:38  ' , '07:39  \n18:27  ' , '07:59  \n17:31  ' , NULL , '07:51  \n18:47  ' , '07:54  \n20:04  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('李青艳' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , '08:14  \n17:38  ' , '07:49  \n17:31  ' , '07:44  \n17:34  ' , '07:55  \n17:33  ' , '07:52  \n17:32  ' , '07:54  \n17:30  ' , NULL , '08:28  \n17:30  ' , '07:54  \n17:34  ' , '07:51  \n17:31  ' , '07:42  \n17:32  ' , '07:41  \n17:33  ' , '07:57  \n17:31  ' , '08:43  \n17:59  ' , NULL , '07:52  \n17:32  ' , '07:49  \n17:32  ' , '07:53  \n17:31  ' , '07:51  \n17:31  ' , '08:00  \n17:30  ' , NULL , '08:49  \n17:30  ' , '07:55  \n17:32  ' , '07:57  \n17:32  ' , '07:56  \n17:32  ' , '07:50  \n17:30  ' , '07:50  \n17:30  ' , '08:47  \n17:31  ' , NULL , '07:55  \n17:32  ' , '07:55  \n17:31  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马芳芳' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , NULL , '07:27  \n17:32  ' , '07:43  \n19:06  ' , '07:01  \n21:16  ' , '07:44  \n17:31  ' , NULL , '07:37  \n22:13  ' , '07:43  \n17:35  ' , '07:43  \n17:32  ' , '07:46  \n17:31  ' , '07:56  \n17:35  ' , '07:51  \n19:25  ' , '08:12  \n21:03  ' , NULL , '07:32  \n17:30  ' , '07:34  \n18:57  ' , '07:48  \n17:32  ' , '07:37  \n19:30  ' , '07:32  \n18:49  ' , NULL , '07:34  \n20:52  ' , '07:40  \n17:31  ' , '07:47  \n17:30  ' , '07:14  \n17:30  ' , '07:41  \n17:30  ' , '07:12  ' , NULL , NULL , '07:32  \n18:21  ' , '07:45  \n17:36  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王红亮' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , '07:42  \n17:33  ' , '08:00  \n17:31  ' , '07:44  \n19:06  ' , '07:02  \n21:16  ' , '07:44  \n17:32  ' , NULL , '07:36  \n22:14  ' , '07:43  \n17:35  ' , '07:42  \n17:32  ' , '07:46  \n17:32  ' , '07:53  \n17:34  ' , '07:55  \n19:26  ' , '08:13  \n21:08  ' , NULL , '07:32  \n17:30  ' , '07:33  \n18:57  ' , '07:48  \n17:30  ' , '07:37  \n19:30  ' , '07:31  \n18:49  ' , NULL , '07:31  \n20:52  ' , '07:41  \n17:30  ' , '07:47  \n17:30  ' , '07:13  \n17:30  ' , '07:41  \n17:30  ' , '07:11  \n21:25  ' , '08:33  \n21:30  ' , NULL , '07:34  \n18:21  ' , '07:45  \n17:35  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王荣' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('魏小艳' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , '08:48  \n18:39  ' , '07:46  \n17:32  ' , '07:42  \n17:31  ' , '07:57  \n17:31  ' , '07:37  \n17:33  ' , '07:44  \n17:32  ' , NULL , '08:57  \n17:49  ' , NULL , '07:42  \n17:31  ' , '07:46  \n17:32  ' , '07:53  \n17:32  ' , '07:41  \n17:35  ' , NULL , '08:46  \n17:47  ' , '07:55  \n17:44  ' , '07:50  \n17:33  ' , '07:45  \n17:31  ' , '07:54  \n17:30  ' , '07:47  \n17:56  ' , NULL , '08:28  \n18:55  ' , '07:50  \n17:31  ' , '07:47  \n17:33  ' , NULL , NULL , NULL , '08:34  \n21:32  ' , NULL , '07:31  \n18:20  ' , '07:46  \n17:35  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张晓艳' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , '07:41  \n17:33  ' , '07:26  \n17:31  ' , '07:42  \n19:06  ' , '07:00  \n21:15  ' , '07:43  \n17:32  ' , NULL , '07:36  \n22:14  ' , '07:44  \n17:35  ' , NULL , '06:51  \n19:39  ' , '07:48  \n17:32  ' , '07:52  \n19:25  ' , '08:12  \n21:04  ' , NULL , '07:32  \n17:30  ' , '07:33  \n18:56  ' , '07:47  \n17:35  ' , '07:36  \n19:30  ' , '07:31  \n18:49  ' , NULL , '07:33  \n20:52  ' , '07:41  \n17:31  ' , '07:46  \n17:30  ' , '07:13  \n17:30  ' , '07:40  \n17:30  ' , '07:11  \n21:24  ' , '08:33  \n21:30  ' , NULL , '07:32  \n18:21  ' , '07:44  \n17:35  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('闫城' , '电商事业部-运营中心-项目部-大区三-靖边分公司' , NULL , '07:53  \n17:57  ' , '07:47  \n17:33  ' , '07:45  \n17:34  ' , '07:39  \n17:31  ' , '07:44  \n18:56  ' , NULL , '07:58  \n17:34  ' , '07:52  \n17:35  ' , '07:50  \n17:30  ' , '07:50  \n19:41  ' , '07:51  \n17:30  ' , '07:49  \n17:33  ' , '08:36  \n18:08  ' , NULL , '07:53  \n17:31  ' , '07:48  \n19:31  ' , '07:48  \n17:31  ' , '07:52  \n17:31  ' , '07:45  \n07:45  \n18:50  ' , '07:34  \n17:49  ' , NULL , NULL , NULL , NULL , '07:53  \n17:30  ' , '07:50  \n17:31  ' , '07:43  \n17:35  ' , NULL , '07:47  \n17:31  ' , '07:41  \n17:30  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('韩永文' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , '23:42  ' , '07:06  ' , '00:01  ' , '06:59  \n23:19  ' , '07:31  ' , '06:52  \n23:01  ' , NULL , NULL , '07:00  ' , '06:33  ' , '22:04  ' , NULL , NULL , NULL , NULL , '08:02  \n23:41  ' , '07:25  ' , NULL , '06:28  \n06:28  \n06:29  \n06:29  \n06:31  ' , '06:52  ' , '09:12  ' , NULL , '07:02  \n22:35  ' , '07:06  ' , NULL , NULL , '06:40  \n06:40  ' , NULL , NULL , '22:12  ' , '07:11  \n21:57  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('贺存' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , '08:01  \n17:30  ' , '07:52  \n17:33  ' , '07:59  \n17:31  ' , '07:55  \n17:33  ' , '07:49  \n17:31  ' , '07:50  \n17:31  ' , NULL , '07:54  \n17:32  ' , '07:50  \n17:58  ' , '07:57  \n17:42  \n18:01  ' , '07:57  \n17:31  ' , '08:00  \n17:37  ' , '08:00  \n18:02  ' , NULL , '07:46  \n18:19  ' , '08:01  \n08:02  \n17:31  ' , '17:40  ' , '07:59  \n17:42  ' , '08:01  \n17:30  ' , '07:59  \n17:37  ' , NULL , '07:32  \n17:47  ' , '08:00  \n17:30  ' , '07:36  \n17:43  ' , '07:27  \n17:34  ' , '07:56  \n17:35  ' , '07:58  \n17:30  ' , NULL , '07:49  \n19:30  ' , '07:55  \n17:38  ' , '08:00  \n17:31  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('惠博' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , '07:59  ' , NULL , NULL , NULL , '07:49  \n17:33  ' , '07:50  \n18:23  ' , NULL , '07:54  ' , '07:50  \n17:43  ' , '07:57  \n17:41  ' , '07:57  \n17:38  ' , '07:54  \n17:41  ' , '08:00  \n18:06  ' , NULL , '07:45  \n18:18  ' , '08:03  \n17:35  ' , NULL , '07:59  \n17:43  ' , '08:14  \n17:34  ' , '07:58  \n17:37  ' , NULL , '07:31  \n17:41  ' , '08:00  \n17:40  ' , '07:51  \n17:48  ' , '07:55  \n17:43  ' , '07:52  \n17:35  ' , '07:57  ' , '07:55  ' , NULL , NULL , '08:00  \n20:23  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('惠岗岗' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , NULL , NULL , '07:29  \n17:44  ' , '07:58  \n17:33  ' , '07:44  \n17:33  ' , '07:49  \n17:34  ' , '07:49  \n18:06  ' , NULL , '07:54  \n17:42  ' , '07:49  \n17:37  ' , '07:48  \n17:33  ' , '07:48  \n17:37  ' , '07:46  \n17:31  ' , '07:38  \n17:41  ' , NULL , '07:56  \n17:31  ' , '07:49  \n17:36  ' , '07:47  \n17:31  ' , '07:47  \n17:32  ' , '07:48  \n17:33  ' , '07:38  \n17:32  ' , NULL , '07:48  \n17:32  ' , '07:33  \n17:46  ' , '07:25  \n17:33  ' , '07:56  \n17:33  ' , '07:51  \n17:31  ' , NULL , '07:53  \n17:31  ' , '07:53  \n17:43  ' , '07:47  \n20:27  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('康焕（离职）' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , '07:54  \n19:21  ' , '07:57  \n18:28  ' , '07:55  \n18:06  ' , '08:00  \n17:30  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('刘磊' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , NULL , '08:21  \n17:40  ' , '07:58  \n18:03  ' , '07:54  \n18:08  ' , '07:53  \n17:31  ' , '07:54  \n18:21  ' , NULL , '08:00  \n17:32  ' , '07:50  \n17:32  ' , '08:30  \n17:30  ' , NULL , NULL , '07:47  \n17:31  ' , NULL , '07:21  \n18:42  ' , '07:58  \n20:37  ' , '07:54  \n17:42  ' , '07:42  \n19:56  ' , '07:48  \n17:30  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张粉波' , '电商事业部-运营中心-项目部-大区三-清涧分公司' , NULL , '07:53  \n17:33  ' , '07:55  \n17:40  ' , '07:51  \n07:51  \n17:31  ' , '07:56  \n17:32  ' , '07:53  ' , '07:28  \n17:31  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('高雨点' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , '08:28  \n18:09  ' , '08:15  \n18:29  ' , '08:25  \n18:03  ' , '08:22  \n18:04  ' , '08:27  \n18:10  ' , '08:24  \n19:03  ' , NULL , '08:25  \n18:01  ' , '08:28  \n18:01  ' , '08:25  \n17:30  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('韩鹏（离职）' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , '08:31  \n18:13  ' , '08:01  \n20:15  \n23:58  ' , '08:04  \n21:14  ' , '07:34  \n00:38  ' , '14:26  \n23:19  ' , NULL , NULL , '04:26  \n18:03  ' , '08:04  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('贺静茹' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('蒲全苗' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('阮星星' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('肖均' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('赵真' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('周雷' , '电商事业部-运营中心-项目部-大区一-淳化分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('虎顺利' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '18:02  ' , '08:32  \n18:05  ' , '08:23  \n18:04  ' , '08:22  \n18:04  ' , '08:18  \n18:01  ' , '08:22  \n18:01  ' , NULL , '08:27  \n18:03  ' , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('么思琪' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , '08:29  \n18:15  ' , '08:17  \n18:06  ' , '07:56  \n00:33  ' , '08:17  \n18:08  ' , '08:28  \n18:26  ' , NULL , '08:26  \n18:20  ' , '08:28  \n18:11  ' , '08:20  \n18:48  ' , '08:14  \n18:18  ' , '08:17  \n18:20  ' , '08:16  \n18:04  ' , '08:18  \n18:00  ' , NULL , '08:19  \n18:11  ' , '08:25  \n18:13  ' , '08:31  \n18:06  ' , '08:25  \n18:21  ' , '08:22  \n18:03  ' , '08:18  \n18:06  ' , NULL , '08:29  \n18:33  ' , '08:18  \n18:07  ' , '08:20  \n18:19  ' , '08:07  \n18:12  ' , '08:20  \n20:05  ' , '08:19  \n18:15  ' , NULL , '08:17  \n18:14  ' , '08:17  \n18:08  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('乔金瑞' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , '08:12  \n18:15  ' , '08:22  \n21:25  ' , '07:47  \n18:09  ' , '08:31  \n18:02  ' , '08:30  \n18:02  ' , '08:27  \n18:38  ' , NULL , '08:31  \n18:03  ' , '08:32  \n18:05  ' , '08:12  \n18:19  ' , '08:31  \n18:15  ' , '08:30  \n09:27  \n19:13  ' , '08:29  \n18:01  ' , NULL , '08:27  \n18:06  ' , '08:25  \n18:10  ' , '08:30  \n18:04  ' , '08:30  \n18:10  ' , '08:27  \n18:04  ' , '08:36  \n18:28  ' , NULL , '08:28  \n18:14  ' , '08:34  \n18:06  ' , '08:30  \n18:19  ' , '08:28  \n18:09  ' , '08:31  \n20:31  ' , '08:27  \n18:04  ' , NULL , '08:32  \n20:05  ' , '08:26  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('吴兰芳' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , '08:21  \n18:02  ' , '08:17  \n19:52  ' , '07:56  \n18:07  ' , '08:30  \n18:04  ' , '08:19  ' , '08:29  \n18:01  ' , NULL , '08:29  \n18:09  ' , '08:34  \n18:12  ' , '08:24  \n18:18  ' , '08:16  \n18:06  ' , '08:20  \n18:02  ' , '08:22  \n18:03  ' , '08:21  \n18:00  ' , '08:22  \n18:04  ' , '08:25  \n18:11  ' , '08:21  \n18:06  ' , '08:26  \n18:21  ' , '08:24  \n18:00  ' , '08:18  \n18:05  ' , NULL , '08:22  \n18:04  ' , '08:24  \n18:08  ' , '08:27  \n18:16  ' , '08:23  \n18:08  ' , '08:25  \n18:04  ' , '08:26  \n18:07  ' , NULL , '08:25  \n18:02  ' , '08:24  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张芳' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , '08:30  \n18:22  ' , '08:17  \n18:06  ' , '07:56  \n18:05  ' , NULL , NULL , NULL , NULL , '08:30  \n18:00  ' , '08:20  \n18:03  ' , '08:15  \n18:13  ' , '08:17  \n18:09  ' , '08:16  \n18:04  ' , '08:18  \n18:02  ' , NULL , '08:18  \n18:17  ' , '08:25  \n18:17  ' , '08:31  \n18:12  ' , '08:25  \n18:21  ' , '08:22  \n18:06  ' , '08:18  \n18:06  ' , NULL , '08:29  \n18:09  ' , '08:18  \n18:07  ' , '08:20  \n18:19  ' , '08:07  \n18:49  ' , '08:20  \n20:46  ' , '08:19  \n18:15  ' , NULL , '08:17  \n18:08  ' , '08:17  \n18:02  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('张亚月' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , '08:29  \n18:15  ' , '08:18  \n18:04  ' , '07:56  \n18:01  ' , '08:17  \n18:03  ' , '08:28  \n18:25  ' , NULL , '08:27  \n18:20  ' , '08:28  \n18:09  ' , '08:21  \n18:02  ' , '08:15  \n18:09  ' , '08:18  \n18:22  ' , '08:18  \n18:02  ' , '08:19  \n18:04  ' , NULL , '08:18  \n18:02  ' , '08:25  \n18:10  ' , '08:32  \n18:06  ' , '17:59  \n18:09  ' , '08:22  \n18:03  ' , '08:19  \n18:05  ' , NULL , '08:29  \n18:02  ' , '08:18  \n18:02  ' , '08:18  \n18:05  ' , '08:18  \n18:02  ' , '08:20  \n18:05  ' , '08:20  \n18:06  ' , '10:17  ' , '08:18  \n18:07  ' , '08:18  \n18:08  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('赵朋飞' , '电商事业部-运营中心-项目部-大区一-彭阳分公司' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '08:14  \n18:39  ' , '08:13  \n18:41  ' , '08:14  \n18:59  ' , '08:08  ' , '07:07  ' , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('何玉婷（离职）' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:15  \n18:04  ' , '08:22  \n18:16  ' , '08:20  \n21:37  \n21:37  \n21:37  ' , '08:09  \n08:09  \n18:05  ' , '08:18  \n18:10  ' , '08:18  \n08:19  \n08:19  \n23:51  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('梁雪尧' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:48  ' , NULL , '18:05  ' , '08:22  \n18:06  ' , '08:27  \n18:11  ' , NULL , NULL , '08:25  \n18:03  ' , '08:24  \n18:05  ' , '08:22  \n18:06  ' , '08:11  \n19:11  ' , '08:23  \n19:45  ' , '08:21  \n18:29  ' , NULL , '08:26  \n18:05  ' , '08:20  \n18:09  ' , '08:21  \n08:23  \n18:05  ' , '08:23  \n18:07  ' , '08:25  \n18:09  ' , '08:20  \n18:10  ' , NULL , '08:23  \n18:06  ' , '08:24  \n22:01  ' , '08:12  \n18:05  ' , '08:19  \n18:30  ' , '08:27  \n18:12  ' , '08:23  \n20:02  ' , NULL , '08:27  \n18:04  \n18:05  ' , '08:27  \n20:18  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('路琳' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:25  \n18:10  ' , '08:26  \n18:42  ' , '08:29  \n18:04  ' , '08:24  \n18:17  ' , '08:27  \n18:14  ' , '08:26  \n19:03  ' , NULL , '08:22  \n18:07  ' , '08:28  \n08:28  \n18:10  ' , '08:23  \n18:07  ' , '08:28  \n18:10  ' , '08:19  \n18:18  ' , '07:25  \n18:29  ' , NULL , '08:29  \n18:30  ' , '08:26  \n18:27  ' , '08:27  \n18:25  ' , '08:26  \n18:24  ' , NULL , '08:29  \n08:29  \n18:09  ' , NULL , '08:24  \n18:28  ' , '08:23  \n22:01  ' , '08:21  \n18:02  ' , '08:28  \n19:45  ' , '08:27  \n18:04  ' , '08:26  \n18:01  ' , NULL , '08:27  \n18:33  ' , '08:28  \n18:49  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('任生飞' , '电商事业部-运营中心-项目部-大区一-正宁分公司\n电商事业部-运营中心-项目部-大区三\n电商事业部-运营中心-项目部-大区三-绥德分公司' , NULL , NULL , NULL , NULL , '07:52  \n23:12  ' , '07:25  \n23:47  ' , '08:19  \n23:50  ' , NULL , '08:30  \n17:37  ' , '08:14  ' , '08:28  \n19:38  ' , NULL , '20:15  ' , '08:29  \n23:00  ' , NULL , '08:19  \n17:42  ' , '07:32  ' , '08:30  \n22:14  ' , '08:17  ' , '08:22  \n21:44  ' , '08:29  \n17:56  ' , NULL , '08:15  \n21:51  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('王静' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:34  \n18:13  ' , '08:26  \n18:48  ' , '08:21  \n18:02  ' , '07:12  \n18:17  ' , '08:26  \n18:36  ' , '08:21  \n18:18  ' , NULL , '08:29  \n18:03  ' , '08:15  \n18:05  ' , '07:33  \n18:06  ' , '08:28  \n18:00  ' , '08:18  \n18:13  ' , '08:27  \n18:29  ' , NULL , NULL , '08:26  \n18:16  ' , '08:26  \n18:05  ' , '08:23  \n18:15  ' , '08:21  \n18:18  ' , '08:25  \n19:47  ' , NULL , '08:27  \n18:04  ' , '08:21  \n18:04  ' , '08:10  \n18:12  ' , '08:21  \n18:04  ' , '06:49  ' , '08:16  \n17:30  ' , NULL , '08:13  \n18:11  ' , '08:26  \n20:25  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('杨旭旭' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:22  \n18:12  ' , '08:11  \n18:26  ' , '08:10  \n18:29  ' , '08:21  \n18:21  ' , '08:12  \n18:03  ' , '08:23  \n18:11  ' , NULL , '08:07  \n18:00  ' , '08:14  \n18:06  ' , '08:19  \n18:04  ' , '08:19  \n18:26  ' , '08:07  \n18:07  ' , '08:05  \n17:30  ' , NULL , '08:16  \n18:36  ' , '08:10  \n18:02  ' , '07:38  \n18:02  ' , '08:05  \n18:03  ' , '08:18  \n18:03  ' , '08:02  \n18:19  ' , NULL , '08:30  \n08:53  \n18:19  ' , '08:04  \n18:04  ' , '08:09  \n18:07  ' , '08:23  \n18:25  ' , '08:10  \n18:03  ' , '08:15  \n18:09  ' , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('闫斌科' , '电商事业部-运营中心-项目部-大区一-正宁分公司' , NULL , '08:36  \n18:12  ' , '08:15  \n22:35  \n22:36  \n22:36  ' , '08:21  \n18:02  ' , '08:29  \n18:21  ' , '08:32  \n18:11  ' , '08:35  \n19:05  ' , NULL , '08:23  \n18:09  \n18:09  \n18:09  \n18:09  \n18:09  ' , '08:28  \n18:10  ' , '08:24  \n18:03  ' , '07:42  \n19:10  ' , '08:30  \n18:00  ' , '08:27  \n18:01  ' , NULL , '08:23  \n18:48  ' , '08:26  \n18:04  ' , '08:25  \n18:03  ' , '08:22  \n18:54  ' , '08:25  \n21:07  ' , '08:26  \n18:11  ' , NULL , '08:15  \n18:06  ' , '08:21  \n18:23  ' , '08:29  \n18:05  ' , '08:27  \n18:02  ' , '08:25  \n18:03  ' , '08:30  \n18:06  ' , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('丁健华（离职）' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:53  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('丁霞' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:32  \n18:02  ' , '08:40  \n18:02  ' , '08:34  \n18:10  ' , '08:43  \n18:12  ' , '08:54  \n18:01  ' , '08:31  \n18:02  ' , NULL , '08:48  \n18:02  ' , '08:42  \n18:01  ' , '08:54  \n18:01  \n18:02  ' , '08:54  \n18:01  ' , '08:51  ' , NULL , NULL , '08:45  \n18:03  ' , '08:47  \n18:01  ' , '08:48  \n18:06  ' , '08:52  \n18:02  ' , '08:50  \n18:01  ' , NULL , NULL , '08:43  \n18:02  ' , '08:39  \n18:02  ' , '08:44  \n18:01  ' , '08:57  \n18:02  ' , '08:48  \n18:03  ' , NULL , NULL , '08:53  \n18:04  ' , '08:44  \n18:13  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马小虎（离职）' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '06:09  \n18:02  ' , '08:52  \n18:03  ' , '08:55  \n18:12  ' , '08:53  \n18:09  ' , '08:56  \n18:00  ' , '08:58  \n18:01  ' , NULL , '08:58  \n18:03  ' , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('马智霞' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:22  \n18:03  ' , '08:02  \n19:20  ' , '08:01  \n18:25  ' , '07:56  \n18:03  ' , '08:27  \n18:01  ' , NULL , NULL , '08:26  \n19:41  ' , '08:21  \n18:02  ' , '08:00  \n21:17  ' , '08:06  \n18:32  ' , '08:21  \n18:02  ' , NULL , NULL , '08:32  \n19:55  ' , '08:30  \n18:03  ' , '08:14  \n18:08  ' , '08:17  \n19:07  ' , '08:15  \n18:02  ' , NULL , '13:28  ' , NULL , '08:33  \n18:09  ' , '08:02  \n18:02  ' , '08:48  \n18:02  ' , '08:02  ' , '18:26  ' , '08:06  \n20:55  ' , '08:39  \n18:12  ' , '08:24  \n18:13  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('田浩' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , '08:41  ' , NULL , '09:21  \n19:19  ' , '08:16  \n18:05  ' , '07:49  ' , '08:21  \n18:48  ' , '08:10  ' , '12:01  ' , '08:30  ' , '08:10  \n18:04  ' , '08:07  \n18:03  ' , '08:37  \n18:36  ' , '08:17  \n19:32  ' , '07:50  \n18:01  ' , NULL , '07:48  \n21:28  ' , '07:40  \n18:11  ' , '08:08  \n21:02  ' , '07:55  \n19:09  ' , '08:17  \n19:58  ' , '08:18  \n18:58  ' , '08:00  ' , '07:36  \n20:06  ' , '08:17  \n18:05  ' , '07:11  \n18:01  ' , '07:56  \n18:04  ' , '08:19  \n18:02  ' , '07:40  \n18:24  ' , '07:38  ' , '08:22  \n18:02  ' , NULL , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.001001s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('杨金凤' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:49  \n18:02  ' , '08:48  ' , '08:53  \n18:12  ' , '08:53  \n18:12  ' , '08:55  \n18:01  ' , '08:53  \n18:02  ' , NULL , '08:52  \n18:02  ' , '08:55  \n18:02  ' , '08:53  \n18:02  ' , '08:52  \n18:01  ' , '08:51  \n18:01  ' , NULL , NULL , '08:59  \n18:02  ' , '08:55  \n18:02  ' , '08:55  \n18:04  ' , '08:55  \n18:01  ' , NULL , NULL , NULL , '08:52  \n18:01  ' , '08:50  \n18:02  ' , '08:52  \n18:01  ' , '08:56  \n18:01  ' , '09:01  \n20:42  ' , '18:26  ' , '08:37  \n20:52  ' , '08:57  \n18:02  ' , '08:51  \n18:01  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('于亚强' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:27  \n18:02  ' , '08:48  \n19:58  ' , '08:54  \n18:41  ' , '08:57  \n18:02  ' , '08:55  \n18:00  ' , '08:54  \n18:00  ' , NULL , '08:53  \n18:02  ' , '08:55  \n18:00  ' , '08:53  \n18:02  ' , '08:53  \n18:01  ' , '08:51  \n18:03  ' , NULL , NULL , '08:59  \n18:00  ' , '08:55  \n18:01  ' , '08:55  \n18:05  ' , '08:55  \n18:02  ' , '08:55  \n18:00  ' , NULL , NULL , '08:52  \n18:00  ' , '08:50  \n18:03  ' , '08:53  \n18:00  ' , '08:57  \n18:01  ' , '09:01  \n18:01  ' , '18:26  ' , '08:37  \n20:53  ' , '08:57  \n18:01  ' , '08:51  \n20:45  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('于志龙' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , NULL , NULL , '09:00  \n18:03  ' , '08:54  \n18:10  ' , '08:55  \n18:00  ' , '08:54  \n18:26  ' , NULL , '08:57  \n18:01  ' , '08:55  \n18:01  ' , '08:53  \n18:01  ' , '08:53  \n18:00  ' , '08:52  \n18:01  ' , NULL , NULL , '08:59  \n18:01  ' , '08:55  \n18:01  ' , '08:56  \n18:06  ' , '08:55  \n18:01  ' , '08:55  ' , NULL , NULL , '08:52  \n18:00  ' , '08:51  \n18:04  ' , '08:53  \n18:00  ' , '08:57  \n18:02  ' , '09:01  \n18:20  ' , '18:26  ' , '08:37  \n20:53  ' , '08:57  \n18:02  ' , '08:52  \n18:00  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+[ sql ] [ SQL ] INSERT INTO `work` (`realname` , `depart` , `a` , `b` , `c` , `d` , `e` , `f` , `g` , `h` , `i` , `j` , `k` , `l` , `m` , `n` , `o` , `p` , `q` , `r` , `s` , `t` , `u` , `v` , `w` , `x` , `y` , `z` , `aa` , `ab` , `ac` , `ad` , `ae` , `create_time` , `update_time`) VALUES ('禹龙龙' , '电商事业部-运营中心-项目部-大区一-泾源分公司' , NULL , '08:52  ' , NULL , NULL , NULL , NULL , NULL , NULL , '09:41  \n18:01  ' , '08:55  \n18:17  ' , '08:53  \n18:02  ' , '08:52  \n18:00  ' , '08:51  \n18:01  ' , NULL , NULL , '08:59  \n18:03  ' , '08:55  \n18:02  ' , '08:55  \n18:00  ' , '08:56  \n18:01  ' , '08:55  \n18:00  ' , NULL , NULL , '08:52  \n18:00  ' , '08:50  \n18:05  ' , '08:52  \n18:00  ' , '18:01  ' , '09:01  \n18:03  ' , '20:09  ' , '08:36  \n20:53  ' , NULL , '13:11  \n20:46  ' , '2018-09-06 18:28:50' , '2018-09-06 18:28:50') [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:28:53+08:00 ] 127.0.0.1 GET /admin/Daily/index
+[ info ] wangying/admin/Daily/index [运行时间：0.050003s][吞吐率：20.00req/s] [内存消耗：2,567.64kb] [文件加载：56]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Daily',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Work/import',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Daily/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Daily->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Daily.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\daily\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT * FROM `sum` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:28:57+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.039002s][吞吐率：25.64req/s] [内存消耗：2,327.66kb] [文件加载：55]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.003000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]
+---------------------------------------------------------------
+[ 2018-09-06T18:33:36+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.038003s][吞吐率：26.31req/s] [内存消耗：2,199.48kb] [文件加载：54]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [8]Undefined property: app\admin\controller\Work::$workModel[D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php:20]
+---------------------------------------------------------------
+[ 2018-09-06T18:33:53+08:00 ] 127.0.0.1 GET /admin/Work/index
+[ info ] wangying/admin/Work/index [运行时间：0.056004s][吞吐率：17.86req/s] [内存消耗：2,938.53kb] [文件加载：57]
+[ info ] [ LANG ] D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Work',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=9gjftndaqakjj26ddgr57d7of7',
+  'accept-language' => 'zh-CN,zh;q=0.9',
+  'accept-encoding' => 'gzip, deflate',
+  'referer' => 'http://wangying/admin/Daily/index',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/68.0.3440.106 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'close',
+  'host' => 'wangying',
+)
+[ info ] [ PARAM ] array (
+  '/admin/Work/index' => '',
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Work->index[ D:\phpStudy\PHPTutorial\WWW\wangying\application\admin\controller\Work.php ]
+[ info ] [ VIEW ] D:\phpStudy\PHPTutorial\WWW\wangying\public/../application/admin\view\work\index.html [ array (
+  0 => 'lists',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.011001s ] mysql:host=127.0.0.1;dbname=wangying;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `work` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `work` [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `admin` [ RunTime:0.002000s ]
+[ sql ] [ SQL ] SELECT * FROM `admin` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000000s ]

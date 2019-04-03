@@ -1,0 +1,74 @@
+{include file="public/head"}
+<script type="text/javascript">
+
+    function del(id) {
+        layer.confirm('确定要删除吗？',  function(){
+            window.location.href="/admin/Demo/del?id="+id;
+        });
+    }
+</script>
+<div id="dcMain"><!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>加班调休</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>
+      <!-- <a href="/admin/Demo/add"  class="actionBtn">添加</a> -->
+        有问题的数据(把excel表中姓名后面的（已离职）删掉)
+    </h3>
+    <div class="filter">
+<!--         <form action="/admin/Daily/choice" method="get">
+            <select name="cat_id" required>
+                <option value="">请选择</option>
+                <option value="1">17:30-23:00</option>
+                <option value="2">23:00-次日10:00</option>
+                <option value="3">次日10:00-17:30</option>
+            </select>
+         <input name="keyword" type="text" class="inpMain" value="" size="20" />
+         <input name="submit" class="btnGray" type="submit" value="筛选" />
+        </form> -->
+        <span>
+            <form action="/admin/Leave/import" method="post" enctype="multipart/form-data" id="import">
+                <input type="file" required name="excel" class="excel">
+                <input type="hidden" name="token" value="">
+                <a class="btnGray submit" href="javascript::void(0)">导入</a>
+            </form>
+            <a class="btnGray" href="/admin/Leave/remove">数据清空</a>
+        </span>
+    </div>
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <th align="center">序号</th>
+                <th align="center">标题</th>
+                <th align="center">姓名</th>
+                <th align="center">部门</th>
+                <th align="center">开始时间</th>
+                <th align="center">结束时间</th>
+
+<!--                 <th align="center">操作</th> -->
+            </tr>
+            <?php $id=1;?>
+            {volist name='lists' id='list'}
+            <tr>
+                <td align="center">{$id}</td>
+                <td align="center">{$list->title}</td>
+                <td align="center">{$list->realname}</td>
+                <td align="center">{$list->depart}</td>
+                <td align="center">{$list->start}</td>
+                <td align="center">{$list->end}</td>
+
+            </tr>
+            <?php $id++;?>
+            {/volist}
+         </table>
+
+    </div>
+</div>
+<script>
+    $(".submit").click(function(){
+        var exc=$(".excel").val();
+        if(exc==""){
+            layer.alert("请先选择文件");
+            return false;
+        }
+        $("#import").submit();
+    })
+</script>
+{include file="public/foot"}

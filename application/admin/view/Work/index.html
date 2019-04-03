@@ -1,0 +1,69 @@
+{include file="public/head"}
+<script type="text/javascript">
+
+    function del(id) {
+        layer.confirm('确定要删除吗？',  function(){
+            window.location.href="/admin/Demo/del?id="+id;
+        });
+    }
+</script>
+<div id="dcMain"><!-- 当前位置 -->
+    <div id="urHere">管理中心<b>></b><strong>Demo</strong> </div>   <div id="manager" class="mainBox" style="height:auto!important;height:550px;min-height:550px;">
+    <h3>
+      <!-- <a href="/admin/Demo/add"  class="actionBtn">添加</a> -->
+        考勤
+    </h3>
+    <div class="filter">
+        <span>
+            <form action="/admin/Work/import" method="post" enctype="multipart/form-data" id="import">
+                <input type="file" required name="excel" class="excel">
+                <input type="month" required name="month" class="month">
+                <a class="btnGray submit" href="javascript::void(0)">导入</a>
+            </form>
+            <a class="btnGray" href="/admin/Work/sums">统计</a>
+            <a class="btnGray" href="/admin/Work/export">导出</a>
+            <a class="btnGray" href="/admin/Work/remove">数据清空</a>
+        </span>
+    </div>
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+                <th align="center">序号</th>
+                <th align="center">姓名</th>
+                <th align="center">日期</th>
+                <th align="center">时间</th>
+                <th align="center">上班时间</th>
+                <th align="center">下班时间</th>
+
+            </tr>
+            <?php $id=1;?>
+            {foreach $lists as $list}
+            <tr>
+                <td align="center">{$id}</td>
+                <td align="center">{$list->realname}</td>
+                <td align="center">{$list->dates}</td>
+                <td align="center">{$list->times}</td>
+                <td align="center">{$list->start}</td>
+                <td align="center">{$list->end}</td>
+            </tr>
+            <?php $id++;?>
+            {/foreach}
+         </table>
+
+    </div>
+</div>
+<script>
+    $(".submit").click(function(){
+        var month=$(".month").val();
+        var file=$(".excel").val();
+        if(file==""){
+            alert("请选择文件");
+            return false;
+        }
+        if(month==""){
+            alert("请先输入月份");
+            return false;
+        }
+        $("#import").submit();
+    })
+</script>
+{include file="public/foot"}
