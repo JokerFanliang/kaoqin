@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:67:"D:\phpStudy\PHPTutorial\WWW\wangying\thinkphp\tpl\dispatch_jump.tpl";i:1535094839;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:56:"/home/fl/workspace/kaoqin/thinkphp/tpl/dispatch_jump.tpl";i:1535094838;}*/ ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
